@@ -1,0 +1,31 @@
+.privacy__policy__section {
+    padding: 7.6rem 8.33% 2rem;
+    
+    .privacy__policy__header {
+        @include header-lg(center, $carrot);
+    }
+
+    .privacy__policy__content {
+        max-width: 40rem;
+        margin: 0 auto;
+
+        .privacy__policy__text {
+            @include copy-desktop(400, center, $black);
+
+        }
+    }
+}
+
+@include media-down(large) {
+
+    .privacy__policy__section {
+
+        .privacy__policy__content {
+
+            .privacy__policy__text {
+                @include copy(400, center, $black);
+    
+            }
+        }
+    }
+}

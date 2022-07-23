@@ -1,0 +1,281 @@
+.about-us__services__section {
+    background-color: #F2F2F2;
+
+    .about-us__services__container {
+        padding: 2.5rem 8.33%;
+
+        .services__header {
+            @include header-lg(center, $carrot);
+        }
+
+        .services__copy__container {
+            max-width: 60rem;
+            margin: 0 auto 3rem auto;
+
+            .services__copy {
+                @include copy-desktop(600, center, $black);
+            }
+        }
+
+        .services__buttons__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 3rem 0 3rem 0;
+
+            .service__link {
+                position: relative;
+                display: flex;
+                width: 13.25rem;
+                height: 13.25rem;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                z-index: 100;
+                background-color: #e1e1e1;
+                box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+                
+                .service__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    transition: all .3s ease;
+
+                    .service__video__icon {
+                        width: 6.41rem;
+                        margin-bottom: 1.6rem;
+                    }
+    
+                    .service__photography__icon {
+                        width: 6.375rem;
+                        margin-bottom: .7rem;
+                    }
+    
+                    .service__social__icon {
+                        width: 5.9rem;
+                        margin-bottom: .3rem;
+                    }
+    
+                    .service__creative__icon {
+                        width: 5.2rem;
+                        margin-bottom: .3rem;
+                    }
+    
+                    .service__postproduction__icon {
+                        width: 5.44rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .service__name {
+                        @include header-xsm(center, $kale);
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);    
+                    }
+                }
+
+                .service__inner-frame {
+                    position: absolute;
+                    width: 87%;
+                    height: 87%;
+                    border: 2px solid $white;
+                    z-index: -1;                
+                }
+            }
+
+            .service__link__active {
+                position: relative;
+                display: flex;
+                width: 13.25rem;
+                height: 13.25rem;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                z-index: 100;
+                background-color: $white;
+                box-shadow: 11px 11px 11px rgba(0, 0, 0, 0.25);
+                
+                .service__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+
+                    .service__video__icon {
+                        width: 6.41rem;
+                        margin-bottom: 1.6rem;
+                    }
+    
+                    .service__photography__icon {
+                        width: 6.375rem;
+                        margin-bottom: .7rem;
+                    }
+    
+                    .service__social__icon {
+                        width: 5.9rem;
+                        margin-bottom: .3rem;
+                    }
+    
+                    .service__creative__icon {
+                        width: 5.2rem;
+                        margin-bottom: .3rem;
+                    }
+    
+                    .service__postproduction__icon {
+                        width: 5.44rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .service__name {
+                        @include header-xsm(center, $kale);
+                    }                
+                }
+
+                .service__inner-frame {
+                    position: absolute;
+                    width: 87%;
+                    height: 87%;
+                    border: 2px solid $carrot;
+                    z-index: -1;                
+                }
+            }
+        }
+
+        .services__text__container {
+
+            .expertise__description__item__container {
+                position: relative;
+                margin-bottom: 6rem;
+
+                .expertise__description__icon {
+                    display: none;
+                }
+
+                .expertise__description__header {
+                    @include header-md(center, $carrot);
+                }
+
+                .expertise__description__copy__container {
+                    margin-bottom: 3rem;
+
+                    .expertise__description__copy {
+                        @include copy-desktop(400, center, $black);
+                        list-style-position: inside;
+                    }
+                }
+                
+                .expertise__description__btn {
+                    @include button-for-white-bkg;
+                    margin: 0 auto;
+                    position: absolute;
+                    bottom: -4rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+// Media queries
+
+@include media-down(xxl) {
+
+    .about-us__services__section {
+
+        .about-us__services__container {
+
+            .services__buttons__container {
+                max-width: 50rem;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@include media-down(large) {
+
+    .about-us__services__section {
+
+        .about-us__services__container {
+
+            .services__copy__container {
+    
+                .services__copy {
+                    @include copy(600, center, $black);
+                }
+            }
+
+            .services__buttons__container {
+                display: none;
+            }
+
+            .services__text__container {
+
+                .expertise__description__item__container {
+
+                    .expertise__description__icon {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .video__icon {
+                        width: 7.973rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .photography__icon {
+                        width: 7.937rem;
+                        margin-bottom: .7rem;
+                    }
+
+                    .social__icon {
+                        width: 7.691rem;
+                        margin-bottom: .8rem;
+                    }
+
+                    .creative__icon {
+                        width: 8.5rem;
+                        margin-bottom: 0.625rem;
+                    }
+
+                    .post__icon {
+                        width: 6.908rem;
+                        margin-bottom: 0.625rem;
+                    }
+
+                    .expertise__description__copy__container {
+                        margin-bottom: 3rem;
+    
+                        .expertise__description__copy {
+                            @include copy(400, center, $black); 
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-down(extra-small) {
+
+    .about-us__services__section {
+
+        .about-us__services__container {
+
+            .services__text__container {
+
+                .expertise__description__item__container {
+
+                    .expertise__description__btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

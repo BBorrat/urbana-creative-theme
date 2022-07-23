@@ -1,0 +1,155 @@
+.testimonial {
+    background-color: $light-gray-2;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;   
+
+    .testimonial__text__container {
+        position: relative;
+        padding: 0 8.33%;
+        z-index: 10;
+        max-width: 60rem;
+        margin: auto;
+
+        .testimonial__header {
+            @include header-lg(center, $carrot)
+        }
+
+        .testimonial__copy {
+            @include copy-desktop(600, center, $black);
+        }
+    }
+
+    .arrow__container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 3rem;
+        z-index: 1000;
+
+        .arrow {
+        width: .7rem;
+        height: .7rem;
+        border-bottom: .13rem solid $kale;
+        border-right: .13rem solid $kale;
+        margin: 0 auto;
+        animation: arrow 2.5s ease-in-out infinite;
+
+            @keyframes arrow {
+            0%   { transform: translate(-30%,-20px) rotate(45deg); opacity: 0;  }
+            50%  { opacity: 1;  }
+            100% { transform: translate(-30%,20px) rotate(45deg); opacity: 0; }
+            }
+        }
+    }
+
+    .testimonial__container {     
+        position: relative;       
+        margin: 0 auto;
+
+        .testimonial__item {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            ".          logo"
+            "quotation  testimonial";
+            position: relative;
+            z-index: 50;
+            box-sizing: content-box;
+            padding: 0 13% 0 12%;
+            margin-bottom: 3rem;
+
+            &:hover {
+                background: linear-gradient(to top, $light-gray-2, $white, $white 50%, $light-gray-2);
+            }
+        
+            .testimonial__coravin-logo {
+                grid-area: logo;
+                margin-bottom: .9rem;
+                width: 12rem;
+            }
+    
+            .testimonial__newell-logo {
+                grid-area: logo;
+                margin-bottom: .9rem;
+                width: 7rem;        
+            }
+    
+            .testimonial__ph-logo {
+                grid-area: logo;
+                margin-bottom: .9rem;
+                width: 6rem;                
+            }
+            
+            .testimonial__quotation__mark {
+                grid-area: quotation;
+                justify-self: end;
+                align-self: flex-start;
+                transform: translate(-0.8rem, -1.7rem);
+                font-family: $primary-font-family;
+                font-size: 9.5rem;
+                color: $urbana-green;
+            }
+            
+            .testimonial__item__container {
+                grid-area: testimonial;
+                overflow: hidden;
+                max-width: 50rem;
+
+                .testimonial__testimonial {
+                    @include copy-desktop(400, left, $kale);
+                    font-style: italic;
+                } 
+
+                .testionial__name {
+                    @include header-sm(right, $kale);
+                    margin-bottom: 0;
+                }
+
+                .testimonial__job-title {
+                    font-family: $primary-font-family;
+                    font-size: .87rem;
+                    text-align: right;
+                    line-height: 19.2px;
+                    color: $kale;
+                }
+
+                .testimonial__line {
+                    width: 100%;
+                    height: 2px;
+                    margin: .5rem 0;
+                    background-color: $urbana-green;
+                }
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@include media-down(large) {
+ 
+    .testimonial {
+     
+        .testimonial__text__container {
+    
+            .testimonial__copy {
+                @include copy(600, center, $black);
+            }
+        }            
+    
+        .testimonial__container {     
+    
+            .testimonial__item {                                            
+                
+                .testimonial__item__container {
+
+                    .testimonial__testimonial {
+                        @include copy(400, left, $kale);
+                    }                        
+                }
+            }
+        }
+    }
+}

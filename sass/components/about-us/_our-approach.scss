@@ -1,0 +1,117 @@
+.our-approach {
+    background-color: $kale;
+    min-width: 280px;
+
+    .our-approach__container {
+
+        .our-approach__intro__container {
+            padding: 2rem 8.33%;
+
+            .our-approach__intro__header {
+                @include header-lg(center, $carrot);
+            }
+
+            .our-approach__intro__copy {
+                @include copy-desktop(700, center, $white);
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 60rem;
+                
+            }
+        }
+
+        .our-approach__item__container {
+            display: flex;
+            gap: 2rem;           
+            padding: 2rem 8.33%;
+            margin: 0;
+
+            &:nth-child(2) {
+                background-color: rgba($urbana-green, $alpha: .25);
+            }
+
+            &:nth-child(3) {
+                background-color: rgba($urbana-green, $alpha: .5);
+            }
+
+            &:nth-child(4) {
+                background-color: rgba($urbana-green, $alpha: .75);
+            }
+
+            &:last-child {
+                background-color: $urbana-green;
+            }
+            
+            .our-approach__icons {
+                width: 6rem;
+            }
+            
+            .hands__icon {
+               width: 6rem;
+            }
+
+            .calendar__icon {
+               width: 5rem;
+               margin: 0 .5rem; 
+            }
+
+            .cloud__icon {
+               width: 4rem; 
+               margin: 0 1rem;
+            }
+
+            .communication__icon {
+               width: 6rem; 
+            }
+
+            .our-approach__item__copy {
+                @include copy-desktop(700, left, $white);
+                margin-bottom: 0;
+            }
+        }
+    }   
+}
+
+// Media queries
+
+@include media-down(large) {
+     
+    .our-approach {
+   
+        .our-approach__container {
+    
+            .our-approach__intro__container {
+                  
+                .our-approach__intro__copy {
+                    @include copy(700, center, $white);
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 60rem;                    
+                }
+            }
+    
+            .our-approach__item__container {
+               
+                .our-approach__item__copy {
+                    @include copy(700, left, $white);
+                }
+            }
+        }   
+    }    
+}
+
+@include media-down(medium) {
+
+    .our-approach__container {
+
+        .our-approach__item__container {
+            flex-direction: column; 
+            align-items: center;          
+    
+            .our-approach__item__copy {
+                @include copy(700, center, $white);
+                margin-bottom: 0;
+            }
+        }
+    }    
+} 

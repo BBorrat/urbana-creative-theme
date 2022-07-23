@@ -1,0 +1,56 @@
+.terms__of__use__section {
+    padding: 7.6rem 8.33% 2rem;
+    
+    .terms__of__use__container {
+
+        .terms__of__use__header {
+            @include header-lg(center, $carrot);
+        }
+
+        .terms__of__use__content {
+            max-width: 40rem;
+            margin: 0 auto;
+
+            .terms__of__use__text {
+                @include copy-desktop(400, center, $black);
+            }
+
+            .terms__of__use__text__header {
+                @include header-md(center, $carrot);
+                margin-top: 3rem;
+            }
+
+            .terms__of__use__ol {
+                list-style-position: inside;
+
+                .terms__of__use__li {
+                    @include copy-desktop(400, center, $black);
+
+                }
+            }
+        }
+    }
+}
+
+@include media-down(large) {
+
+    .terms__of__use__section {
+        
+        .terms__of__use__container {
+        
+            .terms__of__use__content {
+    
+                .terms__of__use__text {
+                    @include copy(400, center, $black);
+                }
+    
+                .terms__of__use__ol {
+    
+                    .terms__of__use__li {
+                        @include copy(400, center, $black);    
+                    }
+                }
+            }
+        }
+    }
+}

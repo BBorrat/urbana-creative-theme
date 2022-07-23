@@ -1,0 +1,180 @@
+@mixin header-xlg($align, $color) {
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    letter-spacing: $header-letter-spacing;
+    font-weight: 600;
+    font-size: $font-size-header-xlg;
+    line-height: 64px;
+    text-align: $align;
+    color: $color;
+    margin-bottom: 1.9rem;
+    }
+
+@mixin header-lg($align, $color) {
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    letter-spacing: $header-letter-spacing;
+    font-weight: 600;
+    font-size: $font-size-header-lg;
+    line-height: 39.2px;
+    text-align: $align;
+    color: $color;
+    margin-bottom: 1.9rem;
+    }
+
+@mixin header-md($align, $color) {
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    letter-spacing: $header-letter-spacing;
+    font-weight: 400;
+    font-size: $font-size-header-md;
+    line-height: 32px;
+    text-align: $align;
+    color: $color;
+    margin-bottom: 1.9rem;
+    }
+
+@mixin header-sm($align, $color) {
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    letter-spacing: $header-letter-spacing;
+    font-weight: 500;
+    font-size: $font-size-header-sm;
+    line-height: 16px;
+    text-align: $align;
+    color: $color;
+    }
+
+@mixin header-xsm($align, $color) {
+    font-family: $primary-font-family;
+    text-transform: uppercase;
+    letter-spacing: $header-letter-spacing;
+    font-weight: 600;
+    font-size: $font-size-header-xsm;
+    line-height: 14.4px;
+    text-align: $align;
+    color: $color;
+    }
+
+@mixin copy($weight, $align, $color) {
+    font-family: $primary-font-family;
+    font-size: $font-size-copy;
+    line-height: $line-height-copy;
+    font-weight: $weight;
+    letter-spacing: $copy-letter-spacing;
+    text-align: $align;
+    color: $color;
+    margin-bottom: 1.4rem;
+}
+
+@mixin copy-desktop($weight, $align, $color) {
+    font-family: $primary-font-family;
+    font-size: $font-size-copy-desktop;
+    line-height: $line-height-copy-desktop;
+    font-weight: $weight;
+    letter-spacing: $copy-letter-spacing;
+    text-align: $align;
+    color: $color;
+    margin-bottom: 1.4rem;
+}
+
+@mixin button() {
+    padding: .6rem 2.3rem;
+    border: 1px solid $white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 1s;
+    // text-transform: uppercase;
+    @include header-sm(center, $white);
+
+    &:hover {
+        border: 1px solid $urbana-green;
+        box-shadow: 1px 1px 20px 10px rgba($kale, .15);
+        // background-color: rgba($color: $black, $alpha: .5);
+        color: $white;
+        transition: .2s;
+    }
+}
+
+@mixin button-dark() {
+    padding: .6rem 2.3rem;
+    border: 1px solid $white;
+    background-color: rgba($black, .7);
+    text-decoration: none;
+    transition: 1s;
+    text-transform: uppercase;
+    @include header-sm(center, $white);
+
+    &:hover {
+        border: 1px solid $urbana-green;
+        box-shadow: 1px 1px 20px 10px rgba($kale, .15);
+        // background-color: rgba($color: $black, $alpha: .5);
+        color: $white;
+        transition: .2s;
+    }
+}
+
+@mixin button-for-white-bkg() {
+    padding: .6rem 2.3rem;
+    border: 1px solid $kale;
+    text-decoration: none;
+    transition: 1s;
+    @include header-sm(center, $kale);
+
+    &:hover {
+        border: 1px solid $urbana-green;
+        box-shadow: 1px 1px 20px 10px rgba($urbana-green, .1);
+        // background-color: rgba($color: $black, $alpha: .5);
+        color: $urbana-green;
+        transition: .2s;
+    }
+}
+
+@mixin hover-flash-fx {
+
+    &:hover {           
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;           
+    }
+
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+    @keyframes flash {
+        
+        0% {
+            opacity: .4;
+        }
+        
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+// custom scroll-bar
+@mixin custom-scroll-bar() {
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      height: 10px;
+      width: 7px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $urbana-green;
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  }

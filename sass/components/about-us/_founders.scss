@@ -1,0 +1,181 @@
+.founders {
+    background-color: $light-gray-2;
+    overflow: hidden;
+    
+    .founders__container {
+        padding: 3rem 8.33%;
+
+        .founders__header {
+            @include header-lg(center, $carrot);
+        }
+
+        .founders__cards__container {
+            display: flex;
+            justify-content: space-between;
+
+            .founders__cards {
+                background-color: $white;
+                width: 39.3vw;               
+
+                .founder__img {
+                    position: relative;
+
+                    .founder__info__button {
+                        position: absolute;
+                        bottom: 1.2rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        @include button();
+                        width: 80%;
+                    }
+
+                    .francisco__img {
+                        width: 100%;
+                    }
+    
+                    .norah__img {
+                        width: 100%;
+                    }
+                }
+
+                .founder__name {
+                    @include header-md(center, $carrot);
+                    margin-top: 3vw;
+                }
+
+                .founders__copy__container {
+                    margin: 1.5vw 3vw 2.3vw;
+                    height: max-content;
+                    overflow: auto;  
+                    @include custom-scroll-bar;
+                    
+                    .founders__personality__container {
+
+                        .founders__card__header {
+                            @include header-sm(center, $urbana-green);
+                            margin-bottom: .4rem
+                        }
+
+                        .founders__card__copy {
+                            @include copy-desktop(500, center, $kale);
+                        }
+    
+                        .founders__social__media__logos {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            gap: 1rem;
+                            margin: .3rem 0 1.7rem 0;
+        
+                            .instagram__logo {
+                                width: 1.8rem;
+                            }
+        
+                            .tiktok__logo {
+                                height: 2rem;
+                            }
+        
+                            .whatsapp__logo {
+                                height: 1.85rem;
+                            }  
+                        }
+                    } 
+                    
+                    .founders__bio__container {
+                        overflow: auto;
+
+                        .founders__bio__header {
+                            @include header-sm(center, $urbana-green);
+                            margin-bottom: .4rem
+                        }
+
+                        .founders__bio__copy {
+                            @include copy-desktop(500, center, $kale);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// --------------
+// Media Quieries
+// -------------- 
+
+@include media-down(large) {
+   
+    .founders {
+        
+        .founders__container {
+    
+            .founders__cards__container {
+                gap: 2rem;
+
+                .founders__cards {   
+                    width: 100%;
+                    max-width: 27rem;             
+    
+                    .founders__copy__container {
+                        
+                        .founders__personality__container {
+   
+                            .founders__card__copy {
+                                @include copy(500, center, $kale);
+                            }                                    
+                        } 
+                        
+                        .founders__bio__container {   
+    
+                            .founders__bio__copy {
+                                @include copy(500, center, $kale);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-down(medium) {
+
+    .founders__container {
+        
+        .founders__cards__container {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 8vw;
+
+            .founders__cards {
+                width: 100%;
+                max-width: 27rem;
+
+                .founder__img {
+                    min-height: 16rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-down(extra-small) {
+
+    .founders {
+    
+        .founders__container {
+            padding: 3rem 0;
+            
+            .founders__cards__container {
+
+                .founders__cards {
+                    max-width: initial;
+
+                    .founders__copy__container {
+                        margin: 3.5vw 8.33% 5.3vw;
+                    }
+                }
+            }
+        }
+    }
+}

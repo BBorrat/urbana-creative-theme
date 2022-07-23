@@ -1,0 +1,103 @@
+.promise-banner {
+    background-color: $white;
+
+    .promise-banner__container {
+        position: relative;
+        width: 100%;
+        padding: 4rem 8.33% 4rem 8.33%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .promise-banner__header {
+            position: relative;
+            @include header-lg(center, $carrot);
+            z-index: 10;
+        }
+
+        .promise-banner__copy {
+            position: relative;
+            @include copy-desktop(600, center, $black);
+            margin-right: auto;
+            margin-left: auto;            
+            width: 50%;
+            z-index: 10;
+        }
+
+        .promise-banner__sub-header {
+            @include header-md(center, $kale);
+            margin-top: 2.9rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        // Start arrow animation
+        .promise-banner__arrow__container {
+            position: relative;
+            top: 1rem;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            z-index: 1000;
+    
+            .promise-banner__arrow {
+                width: .7rem;
+                height: .7rem;
+                border-bottom: .13rem solid $kale;
+                border-right: .13rem solid $kale;
+                // transform: rotate(45deg);
+                margin: 0 auto;
+                animation: arrow 2.5s ease-in-out infinite;
+    
+                @keyframes arrow {
+                0%   { transform: translate(-30%,-20px) rotate(45deg); opacity: 0;  }
+                50%  { opacity: 1;  }
+                100% { transform: translate(-30%,20px) rotate(45deg); opacity: 0; }
+                }
+            }
+        }         
+        //  End arrow animation
+
+        .promise-banner__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            opacity: .3;
+            transition: all 2s;
+        }
+    }
+
+    // Media Queries
+
+    @include media-down(large) {
+
+        .promise-banner__container {
+
+            .promise-banner__copy {
+                width: 75%;
+                @include copy(600, center, $black);
+            }
+
+            .promise-banner__img  {
+                opacity: .2;
+                left: -5rem;
+            }
+        }
+    }
+
+    @include media-down(medium) {
+
+        .promise-banner__container {
+
+            .promise-banner__copy {
+                width: 100%;
+            }
+
+            .promise-banner__img {
+                opacity: 0;
+
+            }
+        }
+    }
+}

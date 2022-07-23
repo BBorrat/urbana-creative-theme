@@ -1,0 +1,226 @@
+.join-us__container {
+    top: 85px;
+    z-index: 10;
+    background-image: linear-gradient(to top, rgba(22, 72, 84, 0.0) 35%, rgba(22, 72, 84, 1) 90%), url(assets/images/join-us-bkg-img.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: 60% 50%;
+
+    .join-us__content--width {
+        padding: 79px 13.5% 79px 8.33%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5rem;
+        grid-template-areas: 
+        "header  card"
+        "text    card"
+        "form    card";
+
+        .join-us__header__container {
+            grid-area: header;
+
+            .join-us__header {
+                @include header-lg(left, $carrot);
+                margin-top: 2rem;
+            }
+        }
+
+        .join-us__form__container {
+            grid-area: form;
+
+            .join-us__form__cta {
+                @include header-md(left, $white);
+            }
+
+            .join-us__form {
+                @include copy-desktop(700, left, $white);
+                display: flex;
+                flex-direction: column;
+                
+                select {
+                    @include copy(700, left, $white);
+                    padding: .3rem .3rem;
+                    background-color: $kale;
+                    border: 1px solid $urbana-green;
+                    outline: none;                   
+                }
+
+                input:not(:last-child) {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $white;
+                    margin-bottom: 1.5rem; 
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+
+                .custom-file-upload {
+                    @include button;
+                    width: 13rem;
+                    margin: 1.3rem 0; 
+                }
+
+                input[type="submit" i] {
+                    @include button;
+                    width: 13rem;  
+                }
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover, 
+                input:-webkit-autofill:focus,
+                textarea:-webkit-autofill,
+                textarea:-webkit-autofill:hover,
+                textarea:-webkit-autofill:focus,
+                select:-webkit-autofill,
+                select:-webkit-autofill:hover,
+                select:-webkit-autofill:focus {
+                border: none;
+                box-shadow: 0 0 0px 1000px #00a18d inset;
+                -webkit-text-fill-color: #fff;
+                -webkit-box-shadow: 0 0 0px 1000px #00a18d inset;
+                transition: background-color 5000s ease-in-out 0s;
+                }
+
+                label:not(:last-child) {
+                    padding: .7rem 0;
+                }
+            }
+
+            .contact__form__legal__text__container {
+                
+                .contact__form__legal__text {
+                    @include copy-desktop(400, left, $white);
+                    margin-bottom: .3rem;
+                }
+                
+                .contact__form__legal__tooltip {
+                    
+                    .contact__form__legal__info__button {
+                        background-color: transparent;
+                        border: none;
+                        color: $white;
+                        cursor: pointer;
+                        margin-bottom: .4rem;
+                        
+                        
+                        .contact__form__legal__info__icon {
+                            // font-size: 1.3rem;
+                            width: 1.2rem;
+                            
+                        }
+                    }
+
+                    .contact__form__legal__tooltip__content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        background-color: $white;
+                        padding: 1rem;
+                        max-width: 25rem;
+                        border-radius: .5rem;
+                        
+
+                        .contact__form__legal__tooltip__text {
+                            @include copy-desktop(400, left, $black);
+                            margin-bottom: .7rem;
+                        }
+
+                        .contact__form__legal__tooltip_close__btn {
+                            @include header-xsm(left, $urbana-green);
+                            padding: .3rem 1.5rem .2rem;
+                            margin: 0;
+                            border: solid .11rem $urbana-green;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -------------
+// Media Queries
+// -------------
+
+@include media-down(large) {
+    
+    .join-us__container {
+    
+        .join-us__content--width {
+    
+            .join-us__form__container {
+    
+                .join-us__form {
+                    @include copy(700, left, $white);
+                    
+                    select {
+                        @include copy(700, left, $white);               
+                    }
+                }
+    
+                .contact__form__legal__text__container {
+                    
+                    .contact__form__legal__text {
+                        @include copy(400, left, $white);
+                    }
+                    
+                    .contact__form__legal__tooltip {
+    
+                        .contact__form__legal__tooltip__content {
+    
+                            .contact__form__legal__tooltip__text {
+                                @include copy(400, left, $black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-down(medium) {
+
+    .join-us__container {
+
+        .join-us__content--width {
+            padding: 79px 8.33% 79px 8.33%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "header"
+            "card"
+            "text"
+            "form" ;
+        }
+    }
+}
+
+@include media-down(small) {
+
+    .join-us__container {
+    
+        .join-us__content--width {
+                
+            .join-us__form__container {
+    
+                .join-us__form {
+    
+                    .custom-file-upload {
+                        width: 100%;
+                    }
+    
+                    input[type="submit" i] {
+                        width: 100%;                        
+                    }
+                }
+            }
+        }
+    }    
+}

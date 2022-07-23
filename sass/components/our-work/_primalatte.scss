@@ -1,0 +1,729 @@
+.primalatte__article {
+    overflow: hidden;
+
+    .primalatte__header__section {
+        position: relative;
+        height: 67vw;
+
+        .primalatte__header__container {
+            position: relative;
+            background-color: #33291f;
+
+            .primalatte__header__image {
+                display: block;
+                height: 27.7rem;
+                mix-blend-mode: luminosity;
+                opacity: .15;
+            }
+    
+            .primalatte__heder {
+                position: absolute;
+                bottom: 2.6rem;
+                left: 8.33%;
+                width: 48vw;
+                @include header-xlg(left, $white);
+            }
+        }                
+    }
+
+    .primalatte__copy__container {
+        height: 26vw;
+        padding: 2.3rem 0 0 8.33%;
+
+        .primalatte__copy {
+            @include copy-desktop(400, left, $black);
+            z-index: 10;
+            width: 31vw;
+            max-width: 35rem;
+        }        
+    }
+
+    .primalatte__key-visual__container {
+        position: absolute;
+        top: 11vw;
+        right: 8.33%;
+        
+        .primalatte__key-visual {
+            width: 31vw;
+            max-width: 27rem;
+            box-shadow: $our-work-shadows;            
+        }
+    }
+
+    .primalatte__header__bkg-logo__container {
+        position: absolute;
+        bottom: 3rem;
+        right: 15vw;
+        z-index: -1;
+
+        .primalatte__header__bkg-logo {
+            width: 44vw;
+            opacity: .1;
+        }
+    } 
+
+    // Photo shooting
+
+    .primalatte__photo-shooting__section {
+        position: relative;
+        width: 100%;
+        margin-top: 2rem;
+
+        .primalatte__photo-shooting__container {
+            display: flex;
+            overflow: hidden;
+            justify-content: flex-end;
+            column-gap: 1rem;
+
+            .primalatte__photo-shooting__image__container {
+
+                .primalatte__photo-shooting__image {
+                    width: 35vw;                    
+                }
+            }
+        }
+
+        .primalatte__background-img-1__desktop__container {
+            position: absolute;
+            top: 8vw;
+            z-index: -1;
+
+            .primalatte__background-img-1__desktop {
+                max-width: 100%;
+                width: 33.6vw;
+            }
+        }
+
+        .primalatte__background-img-1__mobile__container {
+            display: none;
+        }
+    }
+
+    // Video
+
+    .primalatte__video {
+        position: relative;
+        padding-top: 6rem;
+
+        .primalatte__video__container {
+            display: flex;
+            column-gap: 4rem;
+
+            .primalatte__video__img__container {
+                position: relative;
+                margin-left: 8.33%;
+                flex-shrink: 0;
+                    
+                .primalatte__video__device__img {
+                    width: 50vw;                   
+                    -webkit-filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+                    filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+                }  
+                
+                .primalatte__video__wrapper {
+                    position: absolute;
+                    top: 2vw;                   
+                    right: 2vw;
+                    bottom: 2vw;
+                    left: 2vw;
+                    overflow: hidden;
+                    
+                    .primalatte__video {
+                        position: absolute;
+                        right: 0.2rem;
+                        bottom: 2.7rem;
+                        width: 99%;
+                    }               
+                }
+            }
+    
+            .primalatte__video__copy__container {
+                margin-right: 8.33%;
+                                   
+                .primalatte__video__copy {
+                    padding-top: 4rem;
+                    @include copy-desktop(400, left, $black);    
+                }
+            }
+        }
+
+        .primalatte__bkg-logo-2__container {
+            position: absolute;
+            z-index: -1;
+            bottom: -17vw;
+            left: 2vw;
+
+
+            .primalatte__bkg-logo-2 {
+                opacity: .1;
+                width: 63vw;
+            }
+        }
+
+        .primalatte__bkg-img1__desktop__container {
+            position: absolute;
+            top: 35vw;
+            right: 0;
+            z-index: -10;
+
+            .primalatte__bkg-img-1__desktop {
+                width: 58vw;
+            }
+        }
+
+        .primalatte__bkg-img1__mobile__container {
+            display: none;
+        }                
+    }
+
+    // Print ad
+
+    .primalatte__print-ad__section {
+        position: relative;
+        width: 100%;
+        margin: 21vw 0 5vw 0;
+
+        .primalatte__print-ad__img__container {
+            margin: 0 8.33%;
+
+            .primalatte__print-ad__img {
+                width: 65vw;
+                float: right;
+                filter: drop-shadow($our-work-drop-shadow);
+                margin-bottom: 4vw;
+            }
+        }
+
+        .primalatte__print-ad__copy__container {
+            margin: 0 8.33%;
+            padding-left: 50.75vw;
+            
+
+            .primalatte__print-ad__copy {
+                @include copy-desktop(400, left, $black);
+            }
+        }
+
+        .primalatte__bkg-img-2__desktop__container {
+            position: absolute;
+            z-index: -10;
+            top: 20vw;
+
+            .primalatte__bkg-img-2__desktop {
+                width: 50vw;
+            }
+        }
+
+        .primalatte__bkg-img-2__mobile__container {
+            display: none;
+        }
+    }  
+}
+
+// -------------
+// Media Queries
+// -------------
+
+@include media-down(large) {
+
+    .primalatte__article {
+    
+        .primalatte__header__section {    
+            height: 85vw;
+
+            .primalatte__header__container {
+                
+                .primalatte__header__image {
+                    height: 20rem;
+                }
+                
+                .primalatte__heder {
+                    @include header-lg(left, $white);
+                    width: 36vw;
+                }
+            }
+        }
+    
+        .primalatte__copy__container {
+            height: 41vw;
+
+            .primalatte__copy {
+                @include copy(400, left, $black);
+                width: 36vw;
+            }
+        }
+    
+        .primalatte__key-visual__container {    
+            top: 7rem;
+
+            .primalatte__key-visual {
+                width: 43vw;
+            }
+        }
+    
+        .primalatte__header__bkg-logo__container {
+    
+            .primalatte__header__bkg-logo {
+                width: 56vw;
+            }
+        } 
+    
+        // Photo shooting      
+    
+        // Video
+
+        .primalatte__video {
+                
+            .primalatte__video__container {
+                column-gap: 3rem;
+
+                .primalatte__video__img__container {
+                    
+                    .primalatte__video__wrapper {
+                        
+                        .primalatte__video {
+                            position: absolute;
+                            right: 0.2rem;
+                            bottom: 2.2rem;
+                            width: 99%;
+                        }               
+                    }
+                }
+
+                .primalatte__video__copy__container {
+                    
+                    .primalatte__video__copy {
+                        @include copy(400, left, $black);
+                        padding-top: 0;
+                    }
+                }
+            }            
+        }
+        // Print ad
+
+        .primalatte__print-ad__section {
+
+            .primalatte__print-ad__copy__container {
+
+                .primalatte__print-ad__copy {
+                    @include copy(400, left, $black);
+                }
+            }
+        }
+    }   
+}
+
+@include media-down(medium) {
+
+    .primalatte__article {
+    
+        .primalatte__header__section {
+            height: 67rem;
+
+            .primalatte__header__container {
+
+                .primalatte__header__image {
+                    height: 27rem;   
+                }
+                
+                .primalatte__heder {
+                    @include header-lg(center, $white);
+                    top: 7.5rem;
+                    bottom: auto;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    padding: 0 8.33%;
+                }
+            }
+        }
+    
+        .primalatte__copy__container {
+            height: 28rem;
+            padding: 23rem 0 0 0;
+            margin: 0 8.33%;
+            
+            .primalatte__copy {
+                @include copy(400, center, $black);
+                width: auto;
+                max-width: none;
+            }
+        }
+    
+        .primalatte__key-visual__container {
+            top: 15rem;
+            right: 50%;
+            transform: translateX(50%);
+
+            .primalatte__key-visual {
+                width: 25rem;
+            }
+        }
+    
+         
+    
+        // Photo shooting
+    
+        .primalatte__photo-shooting__section {
+            margin-top: 7vw;
+
+            .primalatte__photo-shooting__container {
+                flex-direction: column;
+                row-gap: 7vw;
+
+                .primalatte__photo-shooting__image__container {
+                    margin: 0 8.33%;
+
+                    .primalatte__photo-shooting__image {
+                        width: 100%;                   
+                    }
+                }
+            }
+
+            .primalatte__background-img-1__desktop__container {
+                display: none;               
+            }
+    
+            .primalatte__background-img-1__mobile__container {
+                display: block;
+                position: absolute;
+                top: -19vw;
+                z-index: -10;
+
+                .primalatte__background-img-1__mobile {
+                    width: 50vw;
+                }
+            }
+        }
+    
+        // Video
+    
+        .primalatte__video {
+            padding-top: 36vw;
+
+            .primalatte__video__container {
+                flex-direction: column;
+                align-items: center;
+
+                .primalatte__video__img__container {
+                    margin: 0;
+
+                    .primalatte__video__device__img {
+                        width: 85vw;
+                    }
+
+                    .primalatte__video__wrapper {
+                        
+                        .primalatte__video {
+                            position: absolute;
+                            right: 0.7rem;
+                            bottom: 3.4rem;
+                            width: 96%;
+                        }               
+                    }
+                }
+
+                .primalatte__video__copy__container {
+                    margin: 0 8.33% 1.4rem 8.33%;
+
+                    .primalatte__video__copy {
+                        padding-top: 6vw;
+                        @include copy(400, center, $black);
+        
+                    }
+                }                
+            }
+
+            .primalatte__bkg-logo-2__container {
+                bottom: 96vw;
+            }
+
+            .primalatte__bkg-img1__desktop__container {
+                display: none;
+            }
+
+            .primalatte__bkg-img1__mobile__container {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: -12vw;               
+                z-index: -10;
+
+                .primalatte__bkg-img-1__mobile {
+                    width: 70vw;
+
+                }
+            }
+        }
+    
+        // Print ad
+    
+        .primalatte__print-ad__section {
+            margin-top: 38vw;
+
+            .primalatte__print-ad__img__container {
+
+                .primalatte__print-ad__img {
+                    width: 104vw;
+                    margin-bottom: 5vw;
+                }
+            }
+
+            .primalatte__print-ad__copy__container {
+                padding-left: 31.25vw;
+            }
+
+            .primalatte__bkg-img-2__desktop__container {
+                display: none;
+            }
+    
+            .primalatte__bkg-img-2__mobile__container {
+                display: block;
+                position: absolute;
+                top: -38vw;
+                z-index: -1;
+                
+                .primalatte__bkg-img-2__mobile {
+                    width: 68vw;
+
+                }
+            }    
+        }  
+    }
+}
+
+@include media-down(small) {
+
+    .primalatte__article {                   
+    
+        .primalatte__key-visual__container {
+            position: absolute;
+            
+            .primalatte__key-visual {
+                width: 83vw;
+                max-width: 27rem;
+                box-shadow: $our-work-shadows;            
+            }            
+        }
+    
+        .primalatte__header__bkg-logo__container {
+            position: absolute;
+            bottom: 3rem;
+            right: 15vw;
+            z-index: -1;
+    
+            .primalatte__header__bkg-logo {
+                width: 44vw;
+                opacity: .1;
+            }
+        } 
+    
+        // Photo shooting
+           
+        // Video
+    
+        .primalatte__video {            
+    
+            .primalatte__video__container {
+
+                .primalatte__video__img__container {
+
+                    .primalatte__video__wrapper {
+                        
+                        .primalatte__video {
+                            position: absolute;
+                            right: 0.7rem;
+                            bottom: 2.7rem;
+                            width: 95.5%;
+                        }               
+                    }
+                }
+
+                .primalatte__video__copy__container {
+                    margin: 0 8.33% 1.4rem 8.33%;
+
+                    .primalatte__video__copy {
+                        padding-top: 6vw;
+                        @include copy(400, center, $black);
+        
+                    }
+                }                
+            }
+        }
+    }
+}
+
+@include media-down(extra-small) {
+
+    .primalatte__article {
+    
+        .primalatte__header__section {
+            height: 216vw;
+
+            .primalatte__header__container {
+                height: initial;
+
+                .primalatte__header__image {
+                    height: 100vw;   
+                }
+
+                .primalatte__heder {
+                    top: 24vw;
+                }
+            }           
+        }
+    
+        .primalatte__copy__container {
+            height: initial;
+            padding-top: 66vw;                      
+        }
+            
+        .primalatte__key-visual__container {
+            top: 52vw;
+
+            .primalatte__key-visual {
+                width: 83vw;
+            }
+        }
+    
+        .primalatte__header__bkg-logo__container {
+            bottom: -10vw;
+
+            .primalatte__header__bkg-logo {
+                width: 68vw;
+            }
+        } 
+    
+        // Photo shooting
+    
+        .primalatte__photo-shooting__section {            
+            margin-top: 14vw;
+            
+            .primalatte__background-img-1__mobile__container {
+                top: -21vw;
+            }
+        }
+    
+        // Video
+    
+        .primalatte__video {
+
+            .primalatte__video__container {
+
+                .primalatte__video__img__container {
+
+                    .primalatte__video__wrapper {
+                        
+                        .primalatte__video {
+                            position: absolute;
+                            right: 0.7rem;
+                            bottom: 2.3rem;
+                            width: 94.9%;
+                        }               
+                    }
+                }              
+            }
+
+            .primalatte__bkg-logo-2__container {
+                top: 3vw;
+                bottom: 0;
+            }
+        }
+    
+        // Print ad
+    
+        .primalatte__print-ad__section {
+
+            .primalatte__print-ad__img__container {
+
+                .primalatte__print-ad__img {
+                    width: 138vw;
+                    margin-bottom: 8vw;
+                }
+            }
+
+            .primalatte__print-ad__copy__container {
+                padding-left: 0;
+
+                .primalatte__print-ad__copy {
+                    @include copy(400, center, $black);
+                    margin-bottom: 3rem;
+                }
+            }
+        }  
+    }
+}
+
+@include media-down(xxs) {
+
+    .primalatte__article {
+            
+        // Photo shooting
+            
+        // Video
+    
+        .primalatte__video {
+    
+            .primalatte__video__container {
+                                      
+                .primalatte__video__container {
+    
+                    .primalatte__video__img__container {
+    
+                        .primalatte__video__wrapper {
+                            
+                            .primalatte__video {
+                                position: absolute;
+                                right: 0.4rem;
+                                bottom: 1.85rem;
+                                width: 95.4%;
+                            }               
+                        }
+                    }              
+                }
+            }
+        }
+    
+        // Print ad
+    
+        .primalatte__print-ad__section {
+            position: relative;
+            width: 100%;
+            margin: 27vw 0 5vw 0;
+    
+            .primalatte__print-ad__img__container {
+                margin: 0 8.33%;
+    
+                .primalatte__print-ad__img {
+                    // width: 65vw;
+                    float: right;
+                    filter: drop-shadow($our-work-drop-shadow);
+                    margin-bottom: 4vw;
+                }
+            }
+    
+            .primalatte__print-ad__copy__container {
+                margin: 0 8.33%;
+                padding-left: 14.15vw;
+                
+    
+                .primalatte__print-ad__copy {
+                    @include copy(400, left, $black);
+                }
+            }
+    
+            .primalatte__bkg-img-2__desktop__container {
+               display: none;
+    
+                .primalatte__bkg-img-2__desktop {
+                    width: 50vw;
+                }
+            }
+    
+            .primalatte__bkg-img-2__mobile__container {
+                position: absolute;
+                top: -35vw;
+            }
+        }  
+    }
+}

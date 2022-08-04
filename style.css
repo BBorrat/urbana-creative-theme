@@ -748,30 +748,6 @@ main .services__canvas .service--grid--container .service__first-img {
 	grid-area: item-01;
 }
 
-main .services__canvas .service--grid--container .service__first-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 main .services__canvas .service--grid--container .video {
 	grid-area: item-02;
 }
@@ -782,30 +758,6 @@ main .services__canvas .service--grid--container .service__second-img {
 	background-position: 100% 10%;
 	background-repeat: no-repeat;
 	grid-area: item-03;
-}
-
-main .services__canvas .service--grid--container .service__second-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 
 main .services__canvas .service--grid--container .photography {
@@ -822,30 +774,6 @@ main .services__canvas .service--grid--container .service__third-img {
 	grid-area: item-06;
 }
 
-main .services__canvas .service--grid--container .service__third-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 main .services__canvas .service--grid--container .creative {
 	grid-area: item-10;
 }
@@ -856,58 +784,10 @@ main .services__canvas .service--grid--container .service__fourth-img {
 	grid-area: item-08;
 }
 
-main .services__canvas .service--grid--container .service__fourth-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 main .services__canvas .service--grid--container .service__fifth-img {
 	background-image: url(assets/images/services-sunbeam.jpg);
 	background-size: cover;
 	grid-area: item-09;
-}
-
-main .services__canvas .service--grid--container .service__fifth-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 
 main .services__canvas .service--grid--container .post {
@@ -918,30 +798,6 @@ main .services__canvas .service--grid--container .service__sixth-img {
 	background-image: url(assets/images/services-coffee.jpg);
 	background-size: cover;
 	grid-area: item-11;
-}
-
-main .services__canvas .service--grid--container .service__sixth-img:hover {
-	opacity: 1;
-	-webkit-animation: flash 1.5s;
-	animation: flash 1.5s;
-}
-
-@-webkit-keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 
 main .services__canvas .service--grid--container .join {
@@ -980,6 +836,10 @@ main .services__canvas .service--grid--container .service--grid--link {
 	border: none;
 	text-decoration: none;
 	z-index: 100;
+}
+
+main .services__canvas .service--grid--container .service--grid--link:hover {
+	background-color: rgba(16, 35, 27, 0.1);
 }
 
 main .services__canvas .service--grid--container .service--grid--link .service__grid__container {

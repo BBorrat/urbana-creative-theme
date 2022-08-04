@@ -17,7 +17,7 @@
             background-image: url(assets/images/services-xpert.jpg);
             background-size: cover;
             grid-area: item-01;
-            @include hover-flash-fx;
+            // @include hover-flash-fx;
         }
         
         .video {
@@ -30,7 +30,7 @@
             background-position: 100% 10%;
             background-repeat: no-repeat;
             grid-area: item-03;
-            @include hover-flash-fx;            
+            // @include hover-flash-fx;            
         }
         
         .photography {
@@ -45,7 +45,7 @@
             background-image: url(assets/images/services-meatballs.jpg);
             background-size: cover;
             grid-area: item-06;
-            @include hover-flash-fx;
+            // @include hover-flash-fx;
         }
         
         .creative {
@@ -56,14 +56,14 @@
             background-image: url(assets/images/services-actifit.jpg);
             background-size: cover;
             grid-area: item-08;
-            @include hover-flash-fx;
+            // @include hover-flash-fx;
         }
         
         .service__fifth-img {
             background-image: url(assets/images/services-sunbeam.jpg);
             background-size: cover;
             grid-area: item-09;
-            @include hover-flash-fx;
+            // @include hover-flash-fx;
         }
         
         .post {
@@ -74,7 +74,7 @@
             background-image: url(assets/images/services-coffee.jpg);
             background-size: cover;
             grid-area: item-11;
-            @include hover-flash-fx;
+            // @include hover-flash-fx;
         }
         
         .join {
@@ -113,6 +113,10 @@
             border: none;
             text-decoration: none;
             z-index: 100;
+            
+            &:hover {
+                background-color: rgba($color: $black, $alpha: .1);
+            }
 
             .service__grid__container {
                 display: flex;

@@ -101,13 +101,13 @@
 
     // Video
 
-    .primalatte__video {
-        position: relative;
-        padding-top: 6rem;
+    .primalatte__video__section {
+        padding-top: 6rem;       
 
         .primalatte__video__container {
             display: flex;
             column-gap: 4rem;
+            align-items: center;
 
             .primalatte__video__img__container {
                 position: relative;
@@ -130,8 +130,8 @@
                     
                     .primalatte__video {
                         position: absolute;
-                        right: 0.2rem;
-                        bottom: 2.7rem;
+                        top: 50%;
+                        transform: translateY(-50%);
                         width: 99%;
                     }               
                 }
@@ -272,23 +272,10 @@
     
         // Video
 
-        .primalatte__video {
+        .primalatte__video__section {
                 
             .primalatte__video__container {
-                column-gap: 3rem;
-
-                .primalatte__video__img__container {
-                    
-                    .primalatte__video__wrapper {
-                        
-                        .primalatte__video {
-                            position: absolute;
-                            right: 0.2rem;
-                            bottom: 2.2rem;
-                            width: 99%;
-                        }               
-                    }
-                }
+                column-gap: 3rem;                
 
                 .primalatte__video__copy__container {
                     
@@ -358,9 +345,7 @@
             .primalatte__key-visual {
                 width: 25rem;
             }
-        }
-    
-         
+        }             
     
         // Photo shooting
     
@@ -522,22 +507,9 @@
            
         // Video
     
-        .primalatte__video {            
+        .primalatte__video__section {            
     
-            .primalatte__video__container {
-
-                .primalatte__video__img__container {
-
-                    .primalatte__video__wrapper {
-                        
-                        .primalatte__video {
-                            position: absolute;
-                            right: 0.7rem;
-                            bottom: 2.7rem;
-                            width: 95.5%;
-                        }               
-                    }
-                }
+            .primalatte__video__container {                
 
                 .primalatte__video__copy__container {
                     margin: 0 8.33% 1.4rem 8.33%;
@@ -606,24 +578,8 @@
     
         // Video
     
-        .primalatte__video {
-
-            .primalatte__video__container {
-
-                .primalatte__video__img__container {
-
-                    .primalatte__video__wrapper {
-                        
-                        .primalatte__video {
-                            position: absolute;
-                            right: 0.7rem;
-                            bottom: 2.3rem;
-                            width: 94.9%;
-                        }               
-                    }
-                }              
-            }
-
+        .primalatte__video__container {
+            
             .primalatte__bkg-logo-2__container {
                 top: 3vw;
                 bottom: 0;
@@ -660,29 +616,7 @@
             
         // Photo shooting
             
-        // Video
-    
-        .primalatte__video {
-    
-            .primalatte__video__container {
-                                      
-                .primalatte__video__container {
-    
-                    .primalatte__video__img__container {
-    
-                        .primalatte__video__wrapper {
-                            
-                            .primalatte__video {
-                                position: absolute;
-                                right: 0.4rem;
-                                bottom: 1.85rem;
-                                width: 95.4%;
-                            }               
-                        }
-                    }              
-                }
-            }
-        }
+        // Video           
     
         // Print ad
     

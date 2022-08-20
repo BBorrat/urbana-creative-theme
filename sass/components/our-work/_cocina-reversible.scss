@@ -103,12 +103,13 @@
 
     // Video
 
-    .cocina-a-la-reversible__video {
+    .cocina-a-la-reversible__video__section {
         padding-top: 6rem;
 
         .cocina-a-la-reversible__video__container {
             display: flex;
             column-gap: 4rem;
+            align-items: center;
 
             .cocina-a-la-reversible__video__img__container {
                 position: relative;
@@ -131,8 +132,8 @@
                     
                     .cocina-a-la-reversible__video {
                         position: absolute;
-                        right: 0.14rem;
-                        bottom: 2.7rem;
+                        top: 50%;
+                        transform: translateY(-50%);
                         width: 99%;
                     }               
                 }
@@ -313,23 +314,10 @@
                 
         // Video
     
-        .cocina-a-la-reversible__video {
+        .cocina-a-la-reversible__video__section {
                 
             .cocina-a-la-reversible__video__container {
-                column-gap: 3rem;
-
-                .cocina-a-la-reversible__video__img__container {
-                                        
-                    .cocina-a-la-reversible__video__wrapper {
-                                                
-                        .cocina-a-la-reversible__video {
-                            position: absolute;
-                            right: 0.14rem;
-                            bottom: 2.1rem;
-                            width: 99%;
-                        }               
-                    }
-                }
+                column-gap: 3rem;  
 
                 .cocina-a-la-reversible__video__copy__container {
                     
@@ -430,9 +418,7 @@
             }            
         }
     
-        // Background logo for mobile 
-    
-        
+        // Background logo for mobile             
     
         // Wood Background
     
@@ -447,7 +433,7 @@
     
         // Video
     
-        .cocina-a-la-reversible__video {            
+        .cocina-a-la-reversible__video__section {            
             padding-top: 2rem;
 
             .cocina-a-la-reversible__video__container {
@@ -460,17 +446,7 @@
 
                     .cocina-a-la-reversible__video__device__img {
                         width: 85vw;
-                    }
-
-                    .cocina-a-la-reversible__video__wrapper {
-                                                
-                        .cocina-a-la-reversible__video {
-                            position: absolute;
-                            right: 0.84rem;
-                            bottom: 3.4rem;
-                            width: 96%;
-                        }               
-                    }
+                    }                   
                 }
 
                 .cocina-a-la-reversible__video__copy__container {
@@ -583,26 +559,7 @@
         //  Project header        
     
         // Video
-    
-        .cocina-a-la-reversible__video {
-                
-            .cocina-a-la-reversible__video__container {
-                
-                .cocina-a-la-reversible__video__img__container {
-                    
-                    .cocina-a-la-reversible__video__wrapper {    
-                        
-                        .cocina-a-la-reversible__video {
-                            position: absolute;
-                            right: 0.74rem;
-                            bottom: 2.6rem;
-                            width: 95.5%;
-                        }               
-                    }
-                }
-            }                                        
-        }
-    
+  
         // Baclground image 1           
     
         // Background logo for desktop                
@@ -650,26 +607,7 @@
         // Wood Background
     
         // Video
-    
-        .cocina-a-la-reversible__video {
-                               
-            .cocina-a-la-reversible__video__container {
-                
-                .cocina-a-la-reversible__video__img__container {
-                    
-                    .cocina-a-la-reversible__video__wrapper {    
-                        
-                        .cocina-a-la-reversible__video {
-                            position: absolute;
-                            right: 0.64rem;
-                            bottom: 2.3rem;
-                            width: 94.8%;
-                        }               
-                    }
-                }
-            }           
-        }
-    
+            
         // Baclground image 1
     
         // Background logo for desktop
@@ -689,26 +627,7 @@
     
         //  Project header
     
-        // Video
-    
-        .cocina-a-la-reversible__video {
-                                                       
-            .cocina-a-la-reversible__video__container {
-                
-                .cocina-a-la-reversible__video__img__container {
-                    
-                    .cocina-a-la-reversible__video__wrapper {    
-                        
-                        .cocina-a-la-reversible__video {
-                            position: absolute;
-                            right: 0.44rem;
-                            bottom: 1.85rem;
-                            width: 95.2%;
-                        }               
-                    }
-                }
-            }            
-        }
+        // Video           
     
         // Baclground image 1
     

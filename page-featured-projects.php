@@ -123,7 +123,7 @@
             </section>           
 
             <!-- Video -->
-            <section class="cocina-a-la-reversible__video">
+            <section class="cocina-a-la-reversible__video__section">
                 <div class="cocina-a-la-reversible__video__container">
                     
                     <div class="cocina-a-la-reversible__video__img__container">
@@ -205,7 +205,7 @@
             </div>
 
             <!-- Video -->
-            <section class="coravin__black-friday__video">
+            <section class="coravin__black-friday__video__section">
 
                 <div class="coravin__black-friday__video__container">                   
                     <div class="coravin__black-friday__video__img__container">
@@ -336,7 +336,7 @@
             </section>    
 
             <!-- Video -->
-            <section class="primalatte__video">
+            <section class="primalatte__video__section">
                 <div class="primalatte__video__container">
                     
                     <div class="primalatte__video__img__container">

@@ -82,14 +82,14 @@
             <!-- Header -->
             <section class="cocina-a-la-reversible__header__section">
                 <div class="cocina-a-la-reversible__header__container">
-                    <img src="<?php bloginfo('template_directory')?>/assets/images/reversible-bg.png" alt="" class="cocina-a-la-reversible__header__image">
+                    <img src="<?php bloginfo('template_directory')?>/assets/images/reversible-bg-676x450.png" alt="" class="cocina-a-la-reversible__header__image">
                     <h3 class="cocina-a-la-reversible__heder">Cocina<br>a la Reversible</h3>
                 </div>
                 <div class="cocina-a-la-reversible__copy__container">
                     <p class="cocina-a-la-reversible__copy">To introduce Oster’s new Cocina a la Reversible blender, the Urbana team developed a full suite of visual assets, including video, imagery, recipes, packaging design and more.</p>
                 </div>
                 <div class="cocina-a-la-reversible__key-visual__container">
-                    <img src="<?php bloginfo('template_directory')?>/assets/images/coc-rev-key-visual.jpg" alt="" class="cocina-a-la-reversible__key-visual">
+                    <img src="<?php bloginfo('template_directory')?>/assets/images/coc-rev-key-visual-400x480.jpg" alt="" class="cocina-a-la-reversible__key-visual">
                 </div>
             </section>
 
@@ -190,7 +190,7 @@
             <!-- header -->
             <div class="coravin__black-friday__header__section">
                 <div class="coravin__black-friday__header__container">
-                    <img src="<?php bloginfo('template_directory')?>/assets/images/coravin-header-img.png" alt="" class="coravin__black-friday__header__img">
+                    <img src="<?php bloginfo('template_directory')?>/assets/images/coravin-header-img-791x450.png" alt="" class="coravin__black-friday__header__img">
                     <h3 class="coravin__black-friday__header">Coravin<br>Black Friday</h3>
                 </div>
             </div>
@@ -303,7 +303,7 @@
                     <p class="primalatte__copy">With one simple touch, the Oster Prima Latte brews espresso coffee with a 15-bar pump system and automatically froths milk for cappuccinos and lattes. To bring this elevated coffeemaker to market, Urbana created an equally high-end visual campaign.</p>
                 </div>
                 <div class="primalatte__key-visual__container">
-                    <img src="<?php bloginfo('template_directory')?>/assets/images/primalatte-key-visual.jpg" alt="" class="primalatte__key-visual">
+                    <img src="<?php bloginfo('template_directory')?>/assets/images/primalatte-key-visual-450x567.jpg" alt="" class="primalatte__key-visual">
                 </div>
                 <div class="primalatte__header__bkg-logo__container">
                     <img src="<?php bloginfo('template_directory')?>/assets/images/primalatte-logo.svg" alt="" class="primalatte__header__bkg-logo">

@@ -156,7 +156,7 @@ add_action("wp_enqueue_scripts", "urbana_creative_theme_icons");
  * Enqueue scripts and styles.
  */
 function urbana_creative_theme_scripts() {
-	wp_enqueue_style( 'urbana-creative-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'urbana-creative-theme-style', get_stylesheet_uri(), array(), '1.0.1' );
 	wp_style_add_data( 'urbana-creative-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'urbana-creative-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

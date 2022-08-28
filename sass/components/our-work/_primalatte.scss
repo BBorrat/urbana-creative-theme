@@ -383,7 +383,7 @@
     
         // Video
     
-        .primalatte__video {
+        .primalatte__video__section {
             padding-top: 36vw;
 
             .primalatte__video__container {
@@ -479,7 +479,7 @@
 
 @include media-down(small) {
 
-    .primalatte__article {                   
+    .primalatte__article {       
     
         .primalatte__key-visual__container {
             position: absolute;
@@ -507,7 +507,7 @@
            
         // Video
     
-        .primalatte__video__section {            
+        .primalatte__video__section {    
     
             .primalatte__video__container {                
 

@@ -4425,29 +4425,29 @@ main .primalatte__article .primalatte__print-ad__section .primalatte__bkg-img-2_
 	main .primalatte__article .primalatte__photo-shooting__section .primalatte__background-img-1__mobile__container .primalatte__background-img-1__mobile {
 		width: 50vw;
 	}
-	main .primalatte__article .primalatte__video {
+	main .primalatte__article .primalatte__video__section {
 		padding-top: 36vw;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container {
 		flex-direction: column;
 		align-items: center;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container .primalatte__video__img__container {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container .primalatte__video__img__container {
 		margin: 0;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container .primalatte__video__img__container .primalatte__video__device__img {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container .primalatte__video__img__container .primalatte__video__device__img {
 		width: 85vw;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container .primalatte__video__img__container .primalatte__video__wrapper .primalatte__video {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container .primalatte__video__img__container .primalatte__video__wrapper .primalatte__video {
 		position: absolute;
 		right: 0.7rem;
 		bottom: 3.4rem;
 		width: 96%;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container .primalatte__video__copy__container {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container .primalatte__video__copy__container {
 		margin: 0 8.33% 1.4rem 8.33%;
 	}
-	main .primalatte__article .primalatte__video .primalatte__video__container .primalatte__video__copy__container .primalatte__video__copy {
+	main .primalatte__article .primalatte__video__section .primalatte__video__container .primalatte__video__copy__container .primalatte__video__copy {
 		padding-top: 6vw;
 		font-family: Montserrat, sans-serif;
 		font-size: 0.87rem;
@@ -4458,20 +4458,20 @@ main .primalatte__article .primalatte__print-ad__section .primalatte__bkg-img-2_
 		color: #10231b;
 		margin-bottom: 1.4rem;
 	}
-	main .primalatte__article .primalatte__video .primalatte__bkg-logo-2__container {
+	main .primalatte__article .primalatte__video__section .primalatte__bkg-logo-2__container {
 		bottom: 96vw;
 	}
-	main .primalatte__article .primalatte__video .primalatte__bkg-img1__desktop__container {
+	main .primalatte__article .primalatte__video__section .primalatte__bkg-img1__desktop__container {
 		display: none;
 	}
-	main .primalatte__article .primalatte__video .primalatte__bkg-img1__mobile__container {
+	main .primalatte__article .primalatte__video__section .primalatte__bkg-img1__mobile__container {
 		display: block;
 		position: absolute;
 		right: 0;
 		top: -12vw;
 		z-index: -10;
 	}
-	main .primalatte__article .primalatte__video .primalatte__bkg-img1__mobile__container .primalatte__bkg-img-1__mobile {
+	main .primalatte__article .primalatte__video__section .primalatte__bkg-img1__mobile__container .primalatte__bkg-img-1__mobile {
 		width: 70vw;
 	}
 	main .primalatte__article .primalatte__print-ad__section {

@@ -400,7 +400,7 @@
                 
                 <h4 class="contact--form--cta">Get in touch and let’s talk!</h4>
                         
-                <form class="contact--form">
+                <form class="contact--form" id="contact-form">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name">
                             <label for="email">Email</label>
@@ -448,6 +448,34 @@
 
     const responsiveHeader = document.getElementById("header");
     const headerHamburgerMenu = document.getElementById("header-hamburger-menu");
+
+    // Contact Form
+    const contactForm = document.getElementById("contact-form");
+    const inputName = document.getElementById("name");
+    const inputEmail = document.getElementById("email");
+    const inputCompany = document.getElementById("company");
+    const inputMessage = document.getElementById("message");
+    
+    // Contact us form
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log('entrando al log');
+        console.log(inputName.value);
+        const params = "?name=" + inputName.value + "&company=" + inputCompany.value + "&email=" + inputEmail.value + "&message=" + inputMessage.value;
+        console.log(params);
+
+        fetch("https://apimangosta.galizperu.com/api/mailsb" + params)
+        .then( function(resp) {
+            console.log(resp);
+        });
+
+        // Bloque de borrado
+        inputName.value = "";
+        inputEmail.value = "";
+        inputCompany.value = "";
+        inputMessage.value = "";
+
+    }, true );
 
     headerHamburgerMenu.addEventListener("click", function() {
         headerHamburgerMenu.classList.toggle("change");

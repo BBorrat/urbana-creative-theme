@@ -9,3 +9,5 @@ test-treeshake/*-umd.js
 amd
 cjs
 /underscore-node-*-pre*
+.DS_Store
+sass/.DS_Store

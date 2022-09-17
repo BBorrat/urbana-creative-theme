@@ -17,7 +17,7 @@
 
 			<div class="footer__container">
 				<ul class="footer__submenu">
-					<li> <a href="http://zinaphia.com/dev/urbana" class="footer__submenu__item">Home</a></li>
+					<li> <a href="/" class="footer__submenu__item">Home</a></li>
 					<li> <a href="about-us" class="footer__submenu__item">About Us</a></li>
 					<li> <a href="expertise-video-and-motion-graphics" class="footer__submenu__item">Expertise</a></li>
 					<li> <a href="featured-projects" class="footer__submenu__item">Featured Projects</a></li>

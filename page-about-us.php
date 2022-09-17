@@ -39,7 +39,7 @@
 
             <div class="header__container__margin">
 
-                <a href="http://zinaphia.com/dev/urbana" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
+                <a href="/" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
                     
                 <div class="header__hamburger__menu" id="header-hamburger-menu">
                     <div class="bar1"></div>
@@ -50,15 +50,12 @@
                 <nav class="header__navbar" id="header__navbar">
                     <ul class="header__menu" id="header-menu-container" >
                         <!-- For active link add link--active class to li tags-->
-                        <li class="header__menu__items"> <a href="http://zinaphia.com/dev/urbana" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
+                        <li class="header__menu__items"> <a href="/" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
                         <li class="header__menu__items"> <a href="about-us" id="header-menu-item-link" class="header__menu__item__link link--active">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" id="header-menu-item-link" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" id="header-menu-item-link" class="header__menu__item__link">Featured Projects</a></li>
                         <li class="header__menu__items"> <a href="contact-us" id="header-menu-item-link" class="header__menu__item__link">Contact Us</a></li>
-                        <li class="header__menu__items"> <a href="join-us" id="header-menu-item-link" class="header__menu__item__link">Join Us</a></li>
-
-                       
-                                     
+                        <li class="header__menu__items"> <a href="join-us" id="header-menu-item-link" class="header__menu__item__link">Join Us</a></li>                                                         
                     </ul>
                 </nav> 
             </div> 
@@ -359,7 +356,7 @@
                             
                     <h4 class="contact--form--cta">Get in touch and let’s talk!</h4>
                             
-                    <form class="contact--form">
+                    <form class="contact--form" id="contact-form">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name">
                                 <label for="email">Email</label>
@@ -418,6 +415,37 @@
                 responsiveHeader.classList.add("header__desktop__scroll");
             };          
     });
+
+    // Contact Form
+    const contactForm = document.getElementById("contact-form");
+    const inputName = document.getElementById("name");
+    const inputEmail = document.getElementById("email");
+    const inputCompany = document.getElementById("company");
+    const inputMessage = document.getElementById("message");
+    
+    // Contact us form
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log('entrando al log');
+        console.log(inputName.value);
+        const params = "?name=" + inputName.value + "&company=" + inputCompany.value + "&email=" + inputEmail.value + "&message=" + inputMessage.value;
+        console.log(params);
+
+        fetch("https://apimangosta.galizperu.com/api/mailsb" + params)
+        .then( function(resp) {
+            console.log(resp);
+            return resp.json();
+        }).then( function(data){
+           console.log('data', data);
+        });
+
+        // Bloque de borrado
+        inputName.value = "";
+        inputEmail.value = "";
+        inputCompany.value = "";
+        inputMessage.value = "";
+
+    }, true );
     </script>
 
 <?php

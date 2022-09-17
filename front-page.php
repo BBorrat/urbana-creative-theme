@@ -320,7 +320,7 @@
                             
                     <h4 class="contact--form--cta">Get in touch and let’s talk!</h4>
                             
-                    <form class="contact--form">
+                    <form class="contact--form" id="contact-form">>
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name">
                                 <label for="email">Email</label>
@@ -366,13 +366,17 @@
 </div><!-- #primary -->
 
 <script>
-    "use strict"
     
     const slider = document.querySelector("#featured-project-img-container");
     let sliderSection = document.querySelectorAll(".featured-project__item__container");
     let sliderSectionLast = sliderSection[sliderSection.length -1];
     const btnLeft = document.querySelector("#arrow-prev");
     const btnRight = document.querySelector("#arrow-next");
+    const contactForm = document.getElementById("contact-form");
+    const inputName = document.getElementById("name");
+    const inputEmail = document.getElementById("email");
+    const inputCompany = document.getElementById("company");
+    const inputMessage = document.getElementById("message");
 
     slider.insertAdjacentElement("afterbegin", sliderSectionLast);
 
@@ -386,6 +390,36 @@
             slider.style.marginleft = "-100%";
         }, 500);
     };
+    // Contact us form
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log('entrando al log');
+        console.log(inputName.value);
+        const params = "?name=" + inputName.value + "&company=" + inputCompany.value + "&email=" + inputEmail.value + "&message=" + inputMessage.value;
+        console.log(params);
+
+        // const body = {
+        //     name: inputName.value,
+        //     email: inputEmail.value,
+        //     company: inputCompany.value,
+        //     message: inputMessage.value
+        // };
+        // console.log("Body", body);
+
+        // body: JSON.stringify(body);
+
+        fetch("https://apimangosta.galizperu.com/api/mailsb" + params)
+        .then( function(resp) {
+            console.log(resp);
+        });
+
+        // Bloque de borrado
+        inputName.value = "";
+        inputEmail.value = "";
+        inputCompany.value = "";
+        inputMessage.value = "";
+
+    }, true );
 
     function prev() {
         let sliderSection = document.querySelectorAll(".featured-project__item__container");

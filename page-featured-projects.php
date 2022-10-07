@@ -129,9 +129,10 @@
                     <div class="cocina-a-la-reversible__video__img__container">
                         <img src="<?php bloginfo('template_directory')?>/assets/images/ipad.svg" alt="iPad image" class="cocina-a-la-reversible__video__device__img">
                         <div class="cocina-a-la-reversible__video__wrapper">
-                            <video autoplay muted loop class="cocina-a-la-reversible__video">
+                        <iframe class="cocina-a-la-reversible__video" src="https://player.vimeo.com/video/680545177?h=94fe716360" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <!-- <video autoplay muted loop class="cocina-a-la-reversible__video">
                                 <source src="<?php bloginfo('template_directory')?>/assets/videos/cocina-a-la-reversible.mp4" type="video/mp4">
-                            </video>
+                            </video> -->
                         </div>
                     </div>
                     <div class="cocina-a-la-reversible__video__copy__container">
@@ -211,9 +212,10 @@
                     <div class="coravin__black-friday__video__img__container">
                         <img src="<?php bloginfo('template_directory')?>/assets/images/ipad.svg" alt="iPad image" class="coravin__black-friday__video__device__img">
                         <div class="coravin__black-friday__video__wrapper">
-                            <video autoplay muted loop class="coravin__black-friday__video">
+                        <iframe class="coravin__black-friday__video" src="https://player.vimeo.com/video/680543901?h=039a20b67c" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <!-- <video autoplay muted loop class="coravin__black-friday__video">
                                 <source src="<?php bloginfo('template_directory')?>/assets/videos/coravin.mp4" type="video/mp4">
-                            </video>
+                            </video> -->
                         </div>
                     </div>
                     <div class="coravin__black-friday__video__copy__container">
@@ -342,9 +344,10 @@
                     <div class="primalatte__video__img__container">
                         <img src="<?php bloginfo('template_directory')?>/assets/images/ipad.svg" alt="iPad image" class="primalatte__video__device__img">
                         <div class="primalatte__video__wrapper">
-                            <video autoplay muted loop class="primalatte__video">
+                        <iframe class="primalatte__video" src="https://player.vimeo.com/video/680554014?h=b4ca6fd8c3" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <!-- <video autoplay muted loop class="primalatte__video">
                                 <source src="<?php bloginfo('template_directory')?>/assets/videos/primalatte.mp4" type="video/mp4">
-                            </video>
+                            </video> -->
                         </div>
                     </div>
                     <div class="primalatte__video__copy__container">

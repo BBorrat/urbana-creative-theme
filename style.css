@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Bernardo Borrat
 Author URI: http://bernardo.borrat@bborrat.com
 Description: Urbana Creative Group Wordpress Website
-Version: 1.0.2
+Version: 1.0.3
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -5349,7 +5349,9 @@ main .footer__canvas .footer__copyright {
 }
 
 main .privacy__policy__section {
-	padding: 7.6rem 8.33% 2rem;
+	padding: 7.6rem 0 5rem 0;
+	max-width: 40rem;
+	margin: 0 auto;
 }
 
 main .privacy__policy__section .privacy__policy__header {
@@ -5359,14 +5361,44 @@ main .privacy__policy__section .privacy__policy__header {
 	font-weight: 600;
 	font-size: 2.3rem;
 	line-height: 39.2px;
-	text-align: center;
+	text-align: left;
 	color: #ff6641;
 	margin-bottom: 1.9rem;
 }
 
-main .privacy__policy__section .privacy__policy__content {
-	max-width: 40rem;
-	margin: 0 auto;
+main .privacy__policy__section .privacy__policy__header__small {
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.12rem;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 32px;
+	text-align: left;
+	color: #00a18d;
+	margin-bottom: 1.9rem;
+}
+
+main .privacy__policy__section .privacy__policy__header__x-small {
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.12rem;
+	font-weight: 500;
+	font-size: 0.85rem;
+	line-height: 16px;
+	text-align: left;
+	color: #00a18d;
+	font-weight: 800;
+}
+
+main .privacy__policy__section .privacy__policy__content .privacy__policy__text__small {
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	line-height: 27.52px;
+	font-weight: 400;
+	letter-spacing: 0.01rem;
+	text-align: left;
+	color: #00a18d;
+	margin-bottom: 1.4rem;
 }
 
 main .privacy__policy__section .privacy__policy__content .privacy__policy__text {
@@ -5375,7 +5407,29 @@ main .privacy__policy__section .privacy__policy__content .privacy__policy__text 
 	line-height: 27.52px;
 	font-weight: 400;
 	letter-spacing: 0.01rem;
-	text-align: center;
+	text-align: left;
+	color: #10231b;
+	margin-bottom: 1.4rem;
+}
+
+main .privacy__policy__section .privacy__policy__content .privacy__policy__text__align-left {
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	line-height: 27.52px;
+	font-weight: 400;
+	letter-spacing: 0.01rem;
+	text-align: left;
+	color: #10231b;
+	margin-bottom: 1.4rem;
+}
+
+main .privacy__policy__section .privacy__policy__content .privacy__policy__text__bold {
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	line-height: 27.52px;
+	font-weight: 800;
+	letter-spacing: 0.01rem;
+	text-align: left;
 	color: #10231b;
 	margin-bottom: 1.4rem;
 }
@@ -5387,7 +5441,7 @@ main .privacy__policy__section .privacy__policy__content .privacy__policy__text 
 		line-height: 24px;
 		font-weight: 400;
 		letter-spacing: 0.01rem;
-		text-align: center;
+		text-align: left;
 		color: #10231b;
 		margin-bottom: 1.4rem;
 	}

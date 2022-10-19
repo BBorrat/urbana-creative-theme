@@ -122,7 +122,7 @@ if(is_page("privacy-policy")) {
 
                 <h4 class="privacy__policy__header">Interpretation and Definitions</h4>                
                 <h4 class="privacy__policy__header__small">Interpretation</h4>
-                <p class="privacy__policy__text">>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+                <p class="privacy__policy__text">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
                 <br>
 
                 <h4 class="privacy__policy__header__small">Definitions</h4>

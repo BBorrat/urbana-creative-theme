@@ -275,7 +275,7 @@
                             <div class="founders__personality__container" id="francisco-personality">
                                 
                                 <h5 class="founders__card__header">I consider myself:</h5>
-                                <p class="founders__card__copy">Kind, full of expenssive impulses, a thinker but also a doer.</p>
+                                <p class="founders__card__copy">Kind, full of expressive impulses, a thinker but also a doer.</p>
                                 <h5 class="founders__card__header">Fun fact:</h5>
                                 <p class="founders__card__copy">I'd rather buy food and chocolates than clothes.</p>
                                 <h5 class="founders__card__header">Social media platforms I use most:</h5>
@@ -320,7 +320,7 @@
                                 <h5 class="founders__card__header">Most accounts I follow:</h5>
                                 <p class="founders__card__copy">Food and health accounts.</p>
                                 <h5 class="founders__card__header">My aim for this agency:</h5>
-                                <p class="founders__card__copy">Be able to delivery great results keeping my job creative and fun.</p>
+                                <p class="founders__card__copy">Deliver great results keeping my job creative and fun at the same time.</p>
                             </div>
                             <div class="founders__bio__container display-none" id="norah-bio">
 

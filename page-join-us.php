@@ -55,11 +55,9 @@
                         <li class="header__menu__items"> <a href="about-us" id="header-menu-item-link" class="header__menu__item__link">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" id="header-menu-item-link" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" id="header-menu-item-link" class="header__menu__item__link">Featured Projects</a></li>
+                        <li class="header__menu__items"> <a href="case-study" id="header-case-study" class="header__menu__item__link">Case Study</a></li>
                         <li class="header__menu__items"> <a href="contact-us" id="header-menu-item-link" class="header__menu__item__link">Contact Us</a></li>
-                        <li class="header__menu__items"> <a href="join-us" id="header-menu-item-link" class="header__menu__item__link link--active">Join Us</a></li>
-
-                       
-                                     
+                        <li class="header__menu__items"> <a href="join-us" id="header-menu-item-link" class="header__menu__item__link link--active">Join Us</a></li>                                                         
                     </ul>
                 </nav> 
             </div> 

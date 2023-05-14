@@ -37,7 +37,7 @@
 
             <div class="header__container__margin">
 
-                <a href="https://urbanacreative.com/" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
+                <a href="https://urbanacreative.com" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
                     
                 <div class="header__hamburger__menu" id="header-hamburger-menu">
                     <div class="bar1"></div>
@@ -48,7 +48,7 @@
                 <nav class="header__navbar" id="header__navbar">
                     <ul class="header__menu" id="header-menu-container" >
                         <!-- For active link add link--active class to li tags-->
-                        <li class="header__menu__items"> <a href=/" id="header-menu-item-link" class="header__menu__item__link link--active">Home</a></li>
+                        <li class="header__menu__items"> <a href="/" id="header-menu-item-link" class="header__menu__item__link link--active">Home</a></li>
                         <li class="header__menu__items"> <a href="about-us" id="header-menu-item-link" class="header__menu__item__link">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" id="header-menu-item-link" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" id="header-menu-item-link" class="header__menu__item__link">Featured Projects</a></li>
@@ -320,7 +320,7 @@
                             
                     <h4 class="contact--form--cta">Get in touch and let’s talk!</h4>
                             
-                    <form class="contact--form" id="contact-form">>
+                    <form class="contact--form" id="contact-form">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name">
                                 <label for="email">Email</label>
@@ -366,7 +366,7 @@
 </div><!-- #primary -->
 
 <script>
-    
+
     const slider = document.querySelector("#featured-project-img-container");
     let sliderSection = document.querySelectorAll(".featured-project__item__container");
     let sliderSectionLast = sliderSection[sliderSection.length -1];
@@ -420,7 +420,7 @@
         inputMessage.value = "";
 
     }, true );
-
+        
     function prev() {
         let sliderSection = document.querySelectorAll(".featured-project__item__container");
         let sliderSectionLast = sliderSection[sliderSection.length -1];

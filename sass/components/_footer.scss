@@ -1,8 +1,8 @@
 .footer__canvas {
 	position: relative;
 	font-family: $primary-font-family;
-	font-size: .75rem;
-	font-weight: 500;	
+	font-size: 0.75rem;
+	font-weight: 500;
 	line-height: 18px;
 	padding: 1rem 8.33% 3rem;
 	background-color: $kale;
@@ -12,25 +12,25 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 2rem;
-	
+
 		.footer__submenu {
 			margin-top: 1rem;
-		
+
 			li {
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
 			}
-			
+
 			.footer__submenu__item {
 				text-decoration: none;
 				list-style-type: none;
 				letter-spacing: $header-letter-spacing;
 				font-weight: 600;
 				text-transform: uppercase;
-				color: $white; 
-				opacity: .7;				
-			}     
+				color: $white;
+				opacity: 0.7;
+			}
 		}
 
 		.footer__address__container {
@@ -40,19 +40,19 @@
 				letter-spacing: $header-letter-spacing;
 				font-weight: 600;
 				text-transform: uppercase;
-				color: $white; 
-				opacity: .7;
+				color: $white;
+				opacity: 0.7;
 			}
 
 			.footer__copy {
-				color: $white; 
-				opacity: .7;
+				color: $white;
+				opacity: 0.7;
 			}
 
 			.footer__address {
 				font-style: normal;
-				color: $white; 
-				opacity: .7;			
+				color: $white;
+				opacity: 0.7;
 			}
 		}
 
@@ -64,8 +64,8 @@
 				font-weight: 600;
 				font-style: normal;
 				text-transform: uppercase;
-				color: $white; 
-				opacity: .7;
+				color: $white;
+				opacity: 0.7;
 
 				.footer__copy {
 					letter-spacing: $copy-letter-spacing;
@@ -77,8 +77,8 @@
 			.footer__link {
 				text-decoration: none;
 				font-style: normal;
-				color: $white; 
-				opacity: .7;
+				color: $white;
+				opacity: 0.7;
 				z-index: 100;
 			}
 		}
@@ -90,10 +90,10 @@
 				letter-spacing: $header-letter-spacing;
 				font-weight: 500;
 				font-style: normal;
-				margin-bottom: .5rem;
+				margin-bottom: 0.5rem;
 				text-transform: uppercase;
-				color: $white; 
-				opacity: .7;
+				color: $white;
+				opacity: 0.7;
 			}
 
 			.footer__icon__container {
@@ -106,15 +106,15 @@
 				.footer__instagram__logo {
 					height: 1.5rem;
 				}
-		
+
 				.footer__facebook__logo {
 					height: 1.5rem;
 				}
-		
+
 				.footer__linkedin__logo {
 					height: 1.5rem;
 				}
-			}		
+			}
 		}
 	}
 
@@ -123,7 +123,7 @@
 		bottom: 3.1rem;
 		right: 8.33%;
 		text-align: right;
-		color: $urbana-green; 
+		color: $urbana-green;
 	}
 }
 
@@ -132,11 +132,11 @@
 // -------------
 
 @include media-down(extra-small) {
-	
+
 	.footer__canvas {
-			
+
 		.footer__copyright {
-	
+
 			@include media-down(extra-small) {
 				position: initial;
 				text-align: left;

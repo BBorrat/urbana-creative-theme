@@ -1,54 +1,61 @@
 .privacy__policy__section {
-    padding: 7.6rem 0 5rem 0;
-    max-width: 40rem;
-    margin: 0 auto;
-    
-    .privacy__policy__header {
-        @include header-lg(left, $carrot);
-    }
+	padding: 7.6rem 0 5rem 0;
+	max-width: 40rem;
+	margin: 0 auto;
+	
+	.privacy__policy__header {
 
-    .privacy__policy__header__small {
-        @include header-md(left, $urbana-green);
-    }
+		@include header-lg(left, $carrot);
+	}
 
-    .privacy__policy__header__x-small {
-        @include header-sm(left, $urbana-green);
-        font-weight: 800;
-    }
+	.privacy__policy__header__small {
 
-    .privacy__policy__content {
-        // max-width: 40rem;
-        // margin: 0 auto;
+		@include header-md(left, $urbana-green);
+	}
 
-        .privacy__policy__text__small {
-            @include copy-desktop(400, left, $urbana-green);    
-        }
-        
-        .privacy__policy__text {
-            @include copy-desktop(400, left, $black);
-        }
-       
-        .privacy__policy__text__align-left {
-            @include copy-desktop(400, left, $black);
-        }
+	.privacy__policy__header__x-small {
 
-        .privacy__policy__text__bold {
-            @include copy-desktop(800, left, $black);
-        }
+		@include header-sm(left, $urbana-green);
+		font-weight: 800;
+	}
 
-    }
+	.privacy__policy__content {
+		// max-width: 40rem;
+		// margin: 0 auto;
+
+		.privacy__policy__text__small {
+
+			@include copy-desktop(400, left, $urbana-green);    
+		}
+		
+		.privacy__policy__text {
+
+			@include copy-desktop(400, left, $black);
+		}
+	   
+		.privacy__policy__text__align-left {
+
+			@include copy-desktop(400, left, $black);
+		}
+
+		.privacy__policy__text__bold {
+			@include copy-desktop(800, left, $black);
+		}
+
+	}
 }
 
 @include media-down(large) {
 
-    .privacy__policy__section {
+	.privacy__policy__section {
 
-        .privacy__policy__content {
+		.privacy__policy__content {
 
-            .privacy__policy__text {
-                @include copy(400, left, $black);
-    
-            }
-        }
-    }
+			.privacy__policy__text {
+				
+				@include copy(400, left, $black);
+	
+			}
+		}
+	}
 }

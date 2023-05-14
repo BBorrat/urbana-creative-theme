@@ -36,7 +36,7 @@
 
             <div class="header__container__margin">
 
-                <a href="/" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
+                <a href="https://urbanacreative.com" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
                     
                 <div class="header__hamburger__menu" id="header-hamburger-menu">
                     <div class="bar1"></div>
@@ -47,7 +47,7 @@
                 <nav class="header__navbar" id="header__navbar">
                     <ul class="header__menu" id="header-menu-container" >
                         <!-- For active link add link--active class to li tags-->
-                        <li class="header__menu__items"> <a href="/" class="header__menu__item__link">Home</a></li>
+                        <li class="header__menu__items"> <a href="https://urbanacreative.com" class="header__menu__item__link">Home</a></li>
                         <li class="header__menu__items"> <a href="about-us" class="header__menu__item__link">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" class="header__menu__item__link">Featured Projects</a></li>

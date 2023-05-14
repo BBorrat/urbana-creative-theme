@@ -1,253 +1,258 @@
 .coravin__black-friday__article {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 
-    // Project header
+	// Project header
 
-    .coravin__black-friday__header__section {
-        position: relative;
+	.coravin__black-friday__header__section {
+		position: relative;
 
-        .coravin__black-friday__header__container {
-            position: relative;
-            background-color: #1b232e;
-    
-            .coravin__black-friday__header__img {
-                display: block;
-                height: 27.7rem;
-                mix-blend-mode: luminosity;
-                opacity: .2;
-                object-position: -7rem 50%;
-            }
-    
-            .coravin__black-friday__header {
-                position: absolute;
-                bottom: 2.6rem;
-                left: 8.33%;
-                width: 46vw;
-                @include header-xlg(left, $white);
-            }
-        }                
-    }
-    
-    .coravin__black-friday__copy__container {
-        height: 23vw;
-        padding: 2.3rem 0 0 8.33%;
+		.coravin__black-friday__header__container {
+			position: relative;
+			background-color: #1b232e;
+	
+			.coravin__black-friday__header__img {
+				display: block;
+				height: 27.7rem;
+				mix-blend-mode: luminosity;
+				opacity: .2;
+				object-position: -7rem 50%;
+			}
+	
+			.coravin__black-friday__header {
+				position: absolute;
+				bottom: 2.6rem;
+				left: 8.33%;
+				width: 46vw;
 
-        .coravin__black-friday__copy {
-            @include copy-desktop(400, left, $black);
-            z-index: 10;
-            width: 46vw;
-            max-width: 35rem;
-        }                
-    }
+				@include header-xlg(left, $white);
+			}
+		}                
+	}
+	
+	.coravin__black-friday__copy__container {
+		height: 23vw;
+		padding: 2.3rem 0 0 8.33%;
 
-    .coravin__black-friday__key-visual__container {
-        position: absolute;
-        top: 11rem;
-        right: 8.33%;
+		.coravin__black-friday__copy {
 
-        .coravin__black-friday__key-visual__video {
-            width: 35vw;
-            max-width: 45rem;
-            -webkit-filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
-            filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
-        }                
-    }
+			@include copy-desktop(400, left, $black);
+			z-index: 10;
+			width: 46vw;
+			max-width: 35rem;
+		}                
+	}
 
-    // Video section
+	.coravin__black-friday__key-visual__container {
+		position: absolute;
+		top: 11rem;
+		right: 8.33%;
 
-    .coravin__black-friday__video__section {
-        position: relative;
-        margin-top: 2rem;
-        padding-top: 8rem;
+		.coravin__black-friday__key-visual__video {
+			width: 35vw;
+			max-width: 45rem;
+			-webkit-filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+			filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+		}                
+	}
 
-        .coravin__black-friday__video__container {
-            display: flex;
-            column-gap: 4rem;
-            align-items: center;
+	// Video section
 
-            .coravin__black-friday__video__img__container {
-                position: relative;
-                margin-left: 8.33%;
-                flex-shrink: 0;
-                    
-                .coravin__black-friday__video__device__img {
-                    width: 50vw;                   
-                    -webkit-filter: drop-shadow($our-work-drop-shadow);
-                    filter: drop-shadow($our-work-drop-shadow);
-                }  
-                
-                .coravin__black-friday__video__wrapper {
-                    position: absolute;
-                    top: 2vw;                   
-                    right: 2vw;
-                    bottom: 2vw;
-                    left: 2vw;
-                    overflow: hidden;
-                    
-                    .coravin__black-friday__video {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        width: 99%;
-                    }               
-                }
-            }
-    
-            .coravin__black-friday__video__copy__container {
-                margin-right: 8.33%;
-                                   
-                .coravin__black-friday__video__copy {
-                    padding-top: 4rem;
-                    @include copy-desktop(400, left, $black);    
-                }
-            }
-        }       
-                
-        .coravin__black-friday__video__background__img {
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            
-            .coravin__black-friday__video__background__img__image {
-                width: 40vw;
-            }                    
-        }                        
-    }
+	.coravin__black-friday__video__section {
+		position: relative;
+		margin-top: 2rem;
+		padding-top: 8rem;
 
-    // Hours banners
+		.coravin__black-friday__video__container {
+			display: flex;
+			column-gap: 4rem;
+			align-items: center;
 
-    .coravin__black-friday__hours-banners__section {
-        position: relative;
+			.coravin__black-friday__video__img__container {
+				position: relative;
+				margin-left: 8.33%;
+				flex-shrink: 0;
+					
+				.coravin__black-friday__video__device__img {
+					width: 50vw;                   
+					-webkit-filter: drop-shadow($our-work-drop-shadow);
+					filter: drop-shadow($our-work-drop-shadow);
+				}  
+				
+				.coravin__black-friday__video__wrapper {
+					position: absolute;
+					top: 2vw;                   
+					right: 2vw;
+					bottom: 2vw;
+					left: 2vw;
+					overflow: hidden;
+					
+					.coravin__black-friday__video {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 99%;
+					}               
+				}
+			}
+	
+			.coravin__black-friday__video__copy__container {
+				margin-right: 8.33%;
+								   
+				.coravin__black-friday__video__copy {
+					padding-top: 4rem;
 
-        .coravin__black-friday__hours-banners__container {
-            display: flex;
-            margin: 10vw 8.33% 6vw 8.33% ;
-            justify-content: space-between;
-            height: 75vw;
+					@include copy-desktop(400, left, $black);    
+				}
+			}
+		}       
+				
+		.coravin__black-friday__video__background__img {
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			
+			.coravin__black-friday__video__background__img__image {
+				width: 40vw;
+			}                    
+		}                        
+	}
 
-            .coravin__black-friday__hour-banner {
-                width: 25vw;
-                filter: drop-shadow($our-work-drop-shadow);
-                -webkit-filter: drop-shadow($our-work-drop-shadow);
-            }
+	// Hours banners
 
-            .coravin__black-friday__72hr-banner {
-                align-self: flex-start;
-            }
+	.coravin__black-friday__hours-banners__section {
+		position: relative;
 
-            .coravin__black-friday__24hr-banner {
-                align-self: flex-end;
-            }
-        }
+		.coravin__black-friday__hours-banners__container {
+			display: flex;
+			margin: 10vw 8.33% 6vw 8.33% ;
+			justify-content: space-between;
+			height: 75vw;
 
-        .coravin__black-friday__hours-banners__copy__container {
-            margin: 0 8.33%;
+			.coravin__black-friday__hour-banner {
+				width: 25vw;
+				filter: drop-shadow($our-work-drop-shadow);
+				-webkit-filter: drop-shadow($our-work-drop-shadow);
+			}
 
-            .coravin__black-friday__hours-banners__copy {
-                margin-left: 50%;
-                @include copy-desktop(400, left, $black);
+			.coravin__black-friday__72hr-banner {
+				align-self: flex-start;
+			}
 
-                .bold-text {
-                    @include copy-desktop(800, left, $black);
-                }
-            }
-        }
+			.coravin__black-friday__24hr-banner {
+				align-self: flex-end;
+			}
+		}
 
-        .coravin__black-friday__hours-banners__bk__img__container {
-            position: absolute;
-            top: -20vw;
-            right: 0;
-            
-            z-index: -1;
-            
-            .coravin__black-friday__hours-banners__bk__img {
-                width: 50vw;
-            }
-        }
+		.coravin__black-friday__hours-banners__copy__container {
+			margin: 0 8.33%;
 
-        .coravin__black-friday__hours-banners__bk__isotype__container {
-            position: absolute;
-            bottom: -3vw;
-            left: 3vw;
-            z-index: -1;
+			.coravin__black-friday__hours-banners__copy {
+				margin-left: 50%;
 
-            .coravin__black-friday__hours-banners__bk__isotype {
-                width: 50vw;
-                opacity: .1;
-            }
-        }                        
-    } 
+				@include copy-desktop(400, left, $black);
 
-    // Horizontal banner
+				.bold-text {
 
-    .coravin__black-friday__horizontal-banner__section {
-        width: 100%;
+					@include copy-desktop(800, left, $black);
+				}
+			}
+		}
 
-        .coravin__black-friday__horizontal-banner__img__cntainer {
-            margin: 6vw 8.33%;
+		.coravin__black-friday__hours-banners__bk__img__container {
+			position: absolute;
+			top: -20vw;
+			right: 0;
+			
+			z-index: -1;
+			
+			.coravin__black-friday__hours-banners__bk__img {
+				width: 50vw;
+			}
+		}
 
-            .coravin__black-friday__horizontal-banner__img {
-                width: 100%;
-                box-shadow: $our-work-shadows;
-            }
-        }        
-    }
+		.coravin__black-friday__hours-banners__bk__isotype__container {
+			position: absolute;
+			bottom: -3vw;
+			left: 3vw;
+			z-index: -1;
 
-    // Posts section
+			.coravin__black-friday__hours-banners__bk__isotype {
+				width: 50vw;
+				opacity: .1;
+			}
+		}                        
+	} 
 
-    .coravin__black-friday__posts__section {
-        width: 100%;
-        height: 55vw;
+	// Horizontal banner
 
-        .coravin__black-friday__posts__container {
-            position: relative;
-            margin: 30vw 0;
+	.coravin__black-friday__horizontal-banner__section {
+		width: 100%;
 
-            .coravin__black-friday__posts__phone__container {
-                position: absolute;
-                left: 20.9vw;
-                top: -15.9vw;
-                width: 115vw;
+		.coravin__black-friday__horizontal-banner__img__cntainer {
+			margin: 6vw 8.33%;
 
-                .coravin__black-friday__posts__phone__item {
-                    display: none;
-                }
+			.coravin__black-friday__horizontal-banner__img {
+				width: 100%;
+				box-shadow: $our-work-shadows;
+			}
+		}        
+	}
 
-                .coravin__black-friday__posts__phone__img {
-                    width: 27.5vw;
-                }
-            }
+	// Posts section
 
-            .coravin__black-friday__posts__inner__container {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                display: flex;
-                justify-content: space-between;
-                width: 115vw;
+	.coravin__black-friday__posts__section {
+		width: 100%;
+		height: 55vw;
 
-                .coravin__black-friday__posts__item {
-                    width: 25vw;
-                    
-                    &:not(.coravin__black-friday__posts__item-2) {
-                        filter: drop-shadow($our-work-drop-shadow);
-                    }
-                }
-            }
+		.coravin__black-friday__posts__container {
+			position: relative;
+			margin: 30vw 0;
 
-            .coravin__black-friday__posts__bkg__img__container {
-                position: absolute;
-                z-index: -10;
-                top: -35vw;
+			.coravin__black-friday__posts__phone__container {
+				position: absolute;
+				left: 20.9vw;
+				top: -15.9vw;
+				width: 115vw;
 
-                .coravin__black-friday__posts__bkg__img {
-                    width: 40vw;
+				.coravin__black-friday__posts__phone__item {
+					display: none;
+				}
 
-                }
-            }
-        }                
-    }
+				.coravin__black-friday__posts__phone__img {
+					width: 27.5vw;
+				}
+			}
+
+			.coravin__black-friday__posts__inner__container {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				justify-content: space-between;
+				width: 115vw;
+
+				.coravin__black-friday__posts__item {
+					width: 25vw;
+					
+					&:not(.coravin__black-friday__posts__item-2) {
+						filter: drop-shadow($our-work-drop-shadow);
+					}
+				}
+			}
+
+			.coravin__black-friday__posts__bkg__img__container {
+				position: absolute;
+				z-index: -10;
+				top: -35vw;
+
+				.coravin__black-friday__posts__bkg__img {
+					width: 40vw;
+
+				}
+			}
+		}                
+	}
 }
 
 // -------------
@@ -256,421 +261,430 @@
 
 @include media-down(large) {
 
-    .coravin__black-friday__article {
-    
-        // Project header
-    
-        .coravin__black-friday__header__section {
-    
-            .coravin__black-friday__header__container {
-    
-                .coravin__black-friday__header__img {
-                    height: 20rem;
-                }
-    
-                .coravin__black-friday__header {
-                    @include header-lg(left, $white);
-                    width: 36vw;
-                }
-            }
-        }
-           
-        .coravin__black-friday__copy__container {
-            height: 35vw;
-    
-            .coravin__black-friday__copy {
-                @include copy(400, left, $black);
-                width: 36vw;              
-            }
-        }
-    
-        .coravin__black-friday__key-visual__container {
-            top: 7rem;
-    
-            .coravin__black-friday__key-visual__video {
-                width: 43vw;
-            }
-        }
-    
-        // Video section
-    
-        .coravin__black-friday__video {
-          
-            .coravin__black-friday__video__container {
-                column-gap: 3rem;                   
-            }
+	.coravin__black-friday__article {
+	
+		// Project header
+	
+		.coravin__black-friday__header__section {
+	
+			.coravin__black-friday__header__container {
+	
+				.coravin__black-friday__header__img {
+					height: 20rem;
+				}
+	
+				.coravin__black-friday__header {
 
-            .coravin__black-friday__video__copy__container {
-                                   
-                .coravin__black-friday__video__copy {
-                    @include copy(400, left, $black);    
-                }
-            }
-        }
-    
-        // Hours banners
+					@include header-lg(left, $white);
+					width: 36vw;
+				}
+			}
+		}
+		   
+		.coravin__black-friday__copy__container {
+			height: 35vw;
+	
+			.coravin__black-friday__copy {
 
-        .coravin__black-friday__hours-banners__section {           
-    
-            .coravin__black-friday__hours-banners__copy__container {
-    
-                .coravin__black-friday__hours-banners__copy {
-                    @include copy(400, left, $black);
-    
-                    .bold-text {
-                        @include copy(800, left, $black);
-                    }
-                }
-            }
-        }
-    
-        // Horizontal banner
-    
-        // Posts section
-    
-        .coravin__black-friday__posts__section {
-            width: 100%;
-            height: 55vw;
-    
-            .coravin__black-friday__posts__container {
-                position: relative;
-                margin: 30vw 0;
-    
-                .coravin__black-friday__posts__phone__container {
-                    position: absolute;
-                    left: 20.9vw;
-                    top: -15.9vw;
-                    width: 115vw;
-    
-                    .coravin__black-friday__posts__phone__item {
-                        display: none;
-                    }
-    
-                    .coravin__black-friday__posts__phone__img {
-                        width: 27.5vw;    
-                    }
-                }
-    
-                .coravin__black-friday__posts__inner__container {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    display: flex;
-                    justify-content: space-between;
-                    width: 115vw;
-    
-                    .coravin__black-friday__posts__item {
-                        width: 25vw;
-                        
-                        &:not(.coravin__black-friday__posts__item-2) {
-                            filter: drop-shadow($our-work-drop-shadow);
-                        }
-                    }
-                }
-    
-                .coravin__black-friday__posts__bkg__img__container {
-                    position: absolute;
-                    z-index: -10;
-                    top: -35vw;
-    
-                    .coravin__black-friday__posts__bkg__img {
-                        width: 40vw;
-    
-                    }
-                }
-            }        
-        }
-    }
+				@include copy(400, left, $black);
+				width: 36vw;              
+			}
+		}
+	
+		.coravin__black-friday__key-visual__container {
+			top: 7rem;
+	
+			.coravin__black-friday__key-visual__video {
+				width: 43vw;
+			}
+		}
+	
+		// Video section
+	
+		.coravin__black-friday__video {
+		  
+			.coravin__black-friday__video__container {
+				column-gap: 3rem;                   
+			}
+
+			.coravin__black-friday__video__copy__container {
+								   
+				.coravin__black-friday__video__copy {
+					
+					@include copy(400, left, $black);    
+				}
+			}
+		}
+	
+		// Hours banners
+
+		.coravin__black-friday__hours-banners__section {           
+	
+			.coravin__black-friday__hours-banners__copy__container {
+	
+				.coravin__black-friday__hours-banners__copy {
+					
+					@include copy(400, left, $black);
+	
+					.bold-text {
+						
+						@include copy(800, left, $black);
+					}
+				}
+			}
+		}
+	
+		// Horizontal banner
+	
+		// Posts section
+	
+		.coravin__black-friday__posts__section {
+			width: 100%;
+			height: 55vw;
+	
+			.coravin__black-friday__posts__container {
+				position: relative;
+				margin: 30vw 0;
+	
+				.coravin__black-friday__posts__phone__container {
+					position: absolute;
+					left: 20.9vw;
+					top: -15.9vw;
+					width: 115vw;
+	
+					.coravin__black-friday__posts__phone__item {
+						display: none;
+					}
+	
+					.coravin__black-friday__posts__phone__img {
+						width: 27.5vw;    
+					}
+				}
+	
+				.coravin__black-friday__posts__inner__container {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					display: flex;
+					justify-content: space-between;
+					width: 115vw;
+	
+					.coravin__black-friday__posts__item {
+						width: 25vw;
+						
+						&:not(.coravin__black-friday__posts__item-2) {
+							filter: drop-shadow($our-work-drop-shadow);
+						}
+					}
+				}
+	
+				.coravin__black-friday__posts__bkg__img__container {
+					position: absolute;
+					z-index: -10;
+					top: -35vw;
+	
+					.coravin__black-friday__posts__bkg__img {
+						width: 40vw;
+	
+					}
+				}
+			}        
+		}
+	}
 }
 
 @include media-down(medium) {
 
-    .coravin__black-friday__article {
-    
-        // Project header
-    
-        .coravin__black-friday__header__section {
-    
-            .coravin__black-friday__header__container {
+	.coravin__black-friday__article {
+	
+		// Project header
+	
+		.coravin__black-friday__header__section {
+	
+			.coravin__black-friday__header__container {
 
-                .coravin__black-friday__header__img {
-                    height: 27rem;   
-                }
-                
-                .coravin__black-friday__header {
-                    @include header-lg(center, $white);
-                    top: 7.5rem;
-                    bottom: auto;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100%;
-                    padding: 0 8.33%;
-                }
-            }
-        }
-            
-        .coravin__black-friday__copy__container {
-            height: 25rem;
-            padding: 14rem 0 0 0;
-            margin: 0 8.33%;
-            
-            .coravin__black-friday__copy {
-                @include copy(400, center, $black);
-                width: auto;
-                max-width: none;
-            }
-        }
-    
-        .coravin__black-friday__key-visual__container {
-            top: 15rem;
-            right: 50%;
-            transform: translateX(50%);
+				.coravin__black-friday__header__img {
+					height: 27rem;   
+				}
+				
+				.coravin__black-friday__header {
 
-            .coravin__black-friday__key-visual__video {
-                width: 23rem;
-            }            
-        }
-    
-        // Video section
-    
-        .coravin__black-friday__video__section {            
-                padding-top: 2rem;
-    
-                .coravin__black-friday__video__container {
-                    flex-direction: column;
-                    align-items: center;
-    
-                    .coravin__black-friday__video__img__container {
-                        order: 2;
-                        margin: 0;
-    
-                        .coravin__black-friday__video__device__img {
-                            width: 85vw;
-                        }
-    
-                        .coravin__black-friday__video__wrapper {
-                            
-                            .coravin__black-friday__video {
-                                position: absolute;
-                                right: 0.8rem;
-                                bottom: 3.35rem;
-                                width: 96%;
-                            }               
-                        }
-                    }
-    
-                    .coravin__black-friday__video__copy__container {
-                        margin: 0 8.33% 1.4rem 8.33%;
-                        order: 2;
-    
-                        .coravin__black-friday__video__copy {
-                            padding-top: 3rem;
-                            @include copy(400, center, $black);       
-                        }
-                    }
-                }
-                        
-            .coravin__black-friday__video__background__img {                
-                top: -7vw;
+					@include header-lg(center, $white);
+					top: 7.5rem;
+					bottom: auto;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					padding: 0 8.33%;
+				}
+			}
+		}
+			
+		.coravin__black-friday__copy__container {
+			height: 25rem;
+			padding: 14rem 0 0 0;
+			margin: 0 8.33%;
+			
+			.coravin__black-friday__copy {
 
-                .coravin__black-friday__video__background__img__image {
-                    width: 70vw;
-                }
-            }
-        }
-    
-        // Hours banners
-    
-        .coravin__black-friday__hours-banners__section {
-    
-            .coravin__black-friday__hours-banners__container {
-                margin-top: 20vw;
-            }            
-        } 
-    
-        // Horizontal banner
-    
-        // Posts section         
-    }    
+				@include copy(400, center, $black);
+				width: auto;
+				max-width: none;
+			}
+		}
+	
+		.coravin__black-friday__key-visual__container {
+			top: 15rem;
+			right: 50%;
+			transform: translateX(50%);
+
+			.coravin__black-friday__key-visual__video {
+				width: 23rem;
+			}            
+		}
+	
+		// Video section
+	
+		.coravin__black-friday__video__section {            
+				padding-top: 2rem;
+	
+				.coravin__black-friday__video__container {
+					flex-direction: column;
+					align-items: center;
+	
+					.coravin__black-friday__video__img__container {
+						order: 2;
+						margin: 0;
+	
+						.coravin__black-friday__video__device__img {
+							width: 85vw;
+						}
+	
+						.coravin__black-friday__video__wrapper {
+							
+							.coravin__black-friday__video {
+								position: absolute;
+								right: 0.8rem;
+								bottom: 3.35rem;
+								width: 96%;
+							}               
+						}
+					}
+	
+					.coravin__black-friday__video__copy__container {
+						margin: 0 8.33% 1.4rem 8.33%;
+						order: 2;
+	
+						.coravin__black-friday__video__copy {
+							padding-top: 3rem;
+
+							@include copy(400, center, $black);       
+						}
+					}
+				}
+						
+			.coravin__black-friday__video__background__img {                
+				top: -7vw;
+
+				.coravin__black-friday__video__background__img__image {
+					width: 70vw;
+				}
+			}
+		}
+	
+		// Hours banners
+	
+		.coravin__black-friday__hours-banners__section {
+	
+			.coravin__black-friday__hours-banners__container {
+				margin-top: 20vw;
+			}            
+		} 
+	
+		// Horizontal banner
+	
+		// Posts section         
+	}    
 }
 
 @include media-down(small) {
 
-    .coravin__black-friday__article {
-        position: relative;
-        overflow: hidden;
-    
-        // Project header
-        
-        // Video section        
-    
-        // Hours banners
-    
-        .coravin__black-friday__hours-banners__section {
-            position: relative;
-    
-            .coravin__black-friday__hours-banners__container {
-                margin-top: 23vw;
-                margin-bottom: 8vw;
-                flex-direction: column;
-                align-items: center;
-                row-gap: 10vw;
-                height: auto;
+	.coravin__black-friday__article {
+		position: relative;
+		overflow: hidden;
+	
+		// Project header
+		
+		// Video section        
+	
+		// Hours banners
+	
+		.coravin__black-friday__hours-banners__section {
+			position: relative;
+	
+			.coravin__black-friday__hours-banners__container {
+				margin-top: 23vw;
+				margin-bottom: 8vw;
+				flex-direction: column;
+				align-items: center;
+				row-gap: 10vw;
+				height: auto;
 
-                .coravin__black-friday__hour-banner {
-                    width: 40vw;
-                }
-            }
-            
-            .coravin__black-friday__hours-banners__copy__container {                
-    
-                .coravin__black-friday__hours-banners__copy {
-                    margin-left: 0%;
-                    @include copy(400, center, $black);                        
-                }
-            }            
-        } 
-    
-        // Horizontal banner
-    
-        .coravin__black-friday__horizontal-banner__section {
+				.coravin__black-friday__hour-banner {
+					width: 40vw;
+				}
+			}
+			
+			.coravin__black-friday__hours-banners__copy__container {                
+	
+				.coravin__black-friday__hours-banners__copy {
+					margin-left: 0%;
 
-            .coravin__black-friday__horizontal-banner__img__cntainer {
-                margin: 10vw 0;
-            }
-        }
-    
-        // Posts section
-    
-        .coravin__black-friday__posts__section {            
-            height: 46rem;
+					@include copy(400, center, $black);                        
+				}
+			}            
+		} 
+	
+		// Horizontal banner
+	
+		.coravin__black-friday__horizontal-banner__section {
 
-            .coravin__black-friday__posts__container {
-                padding-top: 15rem;
+			.coravin__black-friday__horizontal-banner__img__cntainer {
+				margin: 10vw 0;
+			}
+		}
+	
+		// Posts section
+	
+		.coravin__black-friday__posts__section {            
+			height: 46rem;
 
-                .coravin__black-friday__posts__phone__container {
-                    top: initial;
-                    right: initial;
-                    left: initial;
-                    width: 100vw;
-                    
-                    .coravin__black-friday__posts__phone__img {
-                        position: absolute;
-                        width: initial;
-                        height: 568px;
-                        right: 8.33%;
-                        top: -10.15rem;
-                    }
-                }
+			.coravin__black-friday__posts__container {
+				padding-top: 15rem;
 
-                .coravin__black-friday__posts__inner__container {
-                    width: initial;
-                    left: initial;
-                    right: 11.2%;
-                    transform: translateX(0);
-                    column-gap: 3rem;
-                    
-                    .coravin__black-friday__posts__item-3,
-                    .coravin__black-friday__posts__item-4 {
-                        display: none;
-                    }
+				.coravin__black-friday__posts__phone__container {
+					top: initial;
+					right: initial;
+					left: initial;
+					width: 100vw;
+					
+					.coravin__black-friday__posts__phone__img {
+						position: absolute;
+						width: initial;
+						height: 568px;
+						right: 8.33%;
+						top: -10.15rem;
+					}
+				}
 
-                    .coravin__black-friday__posts__item {
-                        width: 15.846rem;
-                    }
-                }
+				.coravin__black-friday__posts__inner__container {
+					width: initial;
+					left: initial;
+					right: 11.2%;
+					transform: translateX(0);
+					column-gap: 3rem;
+					
+					.coravin__black-friday__posts__item-3,
+					.coravin__black-friday__posts__item-4 {
+						display: none;
+					}
 
-                .coravin__black-friday__posts__bkg__img__container {
-                    top: -15vw;
-                    
-                    .coravin__black-friday__posts__bkg__img {
-                        width: 68vw;    
-                    }
-                }
-            }                       
-        }
-    }
+					.coravin__black-friday__posts__item {
+						width: 15.846rem;
+					}
+				}
+
+				.coravin__black-friday__posts__bkg__img__container {
+					top: -15vw;
+					
+					.coravin__black-friday__posts__bkg__img {
+						width: 68vw;    
+					}
+				}
+			}                       
+		}
+	}
 }
 
 @include media-down(extra-small) {
 
-    .coravin__black-friday__article {
-                
-        .coravin__black-friday__copy__container {
-                height: 28rem;
-                padding-top: 69vw;            
-        }
-    
-        .coravin__black-friday__key-visual__container {
-            top: 20rem;
+	.coravin__black-friday__article {
+				
+		.coravin__black-friday__copy__container {
+				height: 28rem;
+				padding-top: 69vw;            
+		}
+	
+		.coravin__black-friday__key-visual__container {
+			top: 20rem;
 
-            .coravin__black-friday__key-visual__video {
-                width: 83vw;
-            }
-        }
-    
-        // Video section
-        
-        // Hours banners
-    
-        .coravin__black-friday__hours-banners__section {            
-            margin-top: 60vw;
+			.coravin__black-friday__key-visual__video {
+				width: 83vw;
+			}
+		}
+	
+		// Video section
+		
+		// Hours banners
+	
+		.coravin__black-friday__hours-banners__section {            
+			margin-top: 60vw;
 
-            .coravin__black-friday__hours-banners__container {
-                row-gap: 20vw;
-                margin-bottom: 16vw;
+			.coravin__black-friday__hours-banners__container {
+				row-gap: 20vw;
+				margin-bottom: 16vw;
 
-                .coravin__black-friday__hour-banner {
-                    align-self: center;
-                    width: 90%;                    
-                }
-            }
+				.coravin__black-friday__hour-banner {
+					align-self: center;
+					width: 90%;                    
+				}
+			}
 
-            .coravin__black-friday__hours-banners__bk__img__container {
-                top: -62vw;
-            }
+			.coravin__black-friday__hours-banners__bk__img__container {
+				top: -62vw;
+			}
 
-            .coravin__black-friday__hours-banners__bk__isotype__container {
-                display: none;
-            }
-        } 
-    
-        // Horizontal banner
-    
-        // Posts section
-    
-        .coravin__black-friday__posts__section {
-    
-            .coravin__black-friday__posts__container {
+			.coravin__black-friday__hours-banners__bk__isotype__container {
+				display: none;
+			}
+		} 
+	
+		// Horizontal banner
+	
+		// Posts section
+	
+		.coravin__black-friday__posts__section {
+	
+			.coravin__black-friday__posts__container {
 
-                .coravin__black-friday__posts__phone__container {
-                    
-                    .coravin__black-friday__posts__phone__item {
-                        position: relative;
-                        display: block;
-                        width: 15.8rem;
-                        z-index: 100;
-                        margin: 0 auto;
-                    }
+				.coravin__black-friday__posts__phone__container {
+					
+					.coravin__black-friday__posts__phone__item {
+						position: relative;
+						display: block;
+						width: 15.8rem;
+						z-index: 100;
+						margin: 0 auto;
+					}
 
-                    .coravin__black-friday__posts__phone__img {
-                        right: 50%;
-                        transform: TranslateX(50%);
-                    }
-                }
+					.coravin__black-friday__posts__phone__img {
+						right: 50%;
+						transform: TranslateX(50%);
+					}
+				}
 
-                .coravin__black-friday__posts__inner__container {
-                    right: initial;
-                    margin: 0 auto;
-                    column-gap: 0;
-                    align-items: center;
+				.coravin__black-friday__posts__inner__container {
+					right: initial;
+					margin: 0 auto;
+					column-gap: 0;
+					align-items: center;
 
-                    .coravin__black-friday__posts__item-1,
-                    .coravin__black-friday__posts__item-2 {
-                    display: none;
-                    }               
-                }
-            }            
-        }
-    }
+					.coravin__black-friday__posts__item-1,
+					.coravin__black-friday__posts__item-2 {
+					display: none;
+					}               
+				}
+			}            
+		}
+	}
 }

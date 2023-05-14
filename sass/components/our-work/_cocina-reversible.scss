@@ -1,645 +1,657 @@
 .cocina-a-la-reversible {
-    overflow: hidden;
+	overflow: hidden;
 
-    //  Project header
+	//  Project header
 
-    .cocina-a-la-reversible__header__section {
-        position: relative;
+	.cocina-a-la-reversible__header__section {
+		position: relative;
 
-        .cocina-a-la-reversible__header__container {
-            position: relative;
-            background-color: #1a1e37;           
+		.cocina-a-la-reversible__header__container {
+			position: relative;
+			background-color: #1a1e37;           
 
-            .cocina-a-la-reversible__header__image {
-                display: block;
-                height: 27.7rem;
-                mix-blend-mode: luminosity;
-                opacity: .15;
-            }
-    
-            .cocina-a-la-reversible__heder {
-                position: absolute;
-                bottom: 2.6rem;
-                left: 8.33%;
-                width: 53vw;
-                @include header-xlg(left, $white);
-            }
-        }                
-    }
+			.cocina-a-la-reversible__header__image {
+				display: block;
+				height: 27.7rem;
+				mix-blend-mode: luminosity;
+				opacity: .15;
+			}
+	
+			.cocina-a-la-reversible__heder {
+				position: absolute;
+				bottom: 2.6rem;
+				left: 8.33%;
+				width: 53vw;
 
-    .cocina-a-la-reversible__copy__container {
-        height: 20vw;
-        padding: 2.3rem 0 0 8.33%;
+				@include header-xlg(left, $white);
+			}
+		}                
+	}
 
-        .cocina-a-la-reversible__copy {
-            @include copy-desktop(400, left, $black);
-            z-index: 10;
-            width: 48vw;
-            max-width: 35rem;
-        }                       
-    }
+	.cocina-a-la-reversible__copy__container {
+		height: 20vw;
+		padding: 2.3rem 0 0 8.33%;
 
-    .cocina-a-la-reversible__key-visual__container {
-        position: absolute;
-        top: 11rem;
-        right: 8.33%;
-        
-        .cocina-a-la-reversible__key-visual {
-            width: 31vw;
-            max-width: 27rem;
-            box-shadow: $our-work-shadows;            
-        }                
-    }
+		.cocina-a-la-reversible__copy {
+			
+			@include copy-desktop(400, left, $black);
+			z-index: 10;
+			width: 48vw;
+			max-width: 35rem;
+		}                       
+	}
 
-    // Photography
+	.cocina-a-la-reversible__key-visual__container {
+		position: absolute;
+		top: 11rem;
+		right: 8.33%;
+		
+		.cocina-a-la-reversible__key-visual {
+			width: 31vw;
+			max-width: 27rem;
+			box-shadow: $our-work-shadows;            
+		}                
+	}
 
-    .cocina-a-la-reversible {
-        width: 100%;
-        margin-top: 2rem;
+	// Photography
 
-        .cocina-a-la-reversible__container {
-            display: flex;
-            overflow: hidden;
-            justify-content: flex-end;
-            column-gap: 1rem;
+	.cocina-a-la-reversible {
+		width: 100%;
+		margin-top: 2rem;
 
-            .cocina-a-la-reversible__image__container {
-                .cocina-a-la-reversible__image {
-                    width: 35vw;                    
-                }
-            }
-        }       
-    }
+		.cocina-a-la-reversible__container {
+			display: flex;
+			overflow: hidden;
+			justify-content: flex-end;
+			column-gap: 1rem;
 
-    // Background logo for mobile 
+			.cocina-a-la-reversible__image__container {
+				.cocina-a-la-reversible__image {
+					width: 35vw;                    
+				}
+			}
+		}       
+	}
 
-    .cocina-a-la-reversible__bkg__logo__container__mobile {
-        display: block;
-        position: relative;
-        z-index: -100;
-        
-        .cocinna-a-la-reversible__bkg__logo__img__mobile {
-            position: absolute;
-            opacity: .08;
-            top: -45vw;
-            right: -25vw;
-            width: 70vw;
-        }        
-    }
+	// Background logo for mobile 
 
-    // Wood Background
+	.cocina-a-la-reversible__bkg__logo__container__mobile {
+		display: block;
+		position: relative;
+		z-index: -100;
+		
+		.cocinna-a-la-reversible__bkg__logo__img__mobile {
+			position: absolute;
+			opacity: .08;
+			top: -45vw;
+			right: -25vw;
+			width: 70vw;
+		}        
+	}
 
-    .cocina-a-la-reversible__background__wood__container {
-        position: relative;    
-        z-index: -10;
+	// Wood Background
 
-        .cocina-a-la-reversible__background__wood__img {
-            position: absolute;
-            top: 10vw;
-            width: 45vw;
-            height: 65vw;
-        }        
-    }
+	.cocina-a-la-reversible__background__wood__container {
+		position: relative;    
+		z-index: -10;
 
-    // Video
+		.cocina-a-la-reversible__background__wood__img {
+			position: absolute;
+			top: 10vw;
+			width: 45vw;
+			height: 65vw;
+		}        
+	}
 
-    .cocina-a-la-reversible__video__section {
-        padding-top: 6rem;
+	// Video
 
-        .cocina-a-la-reversible__video__container {
-            display: flex;
-            column-gap: 4rem;
-            align-items: center;
+	.cocina-a-la-reversible__video__section {
+		padding-top: 6rem;
 
-            .cocina-a-la-reversible__video__img__container {
-                position: relative;
-                margin-left: 8.33%;
-                flex-shrink: 0;
-                    
-                .cocina-a-la-reversible__video__device__img {
-                    width: 50vw;                   
-                    -webkit-filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
-                    filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
-                }  
-                
-                .cocina-a-la-reversible__video__wrapper {
-                    position: absolute;
-                    top: 2vw;                   
-                    right: 2vw;
-                    bottom: 2vw;
-                    left: 2vw;
-                    overflow: hidden;
-                    
-                    .cocina-a-la-reversible__video {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        width: 99%;
-                    }               
-                }
-            }
-    
-            .cocina-a-la-reversible__video__copy__container {
-                margin-right: 8.33%;
-                                   
-                .cocina-a-la-reversible__video__copy {
-                    padding-top: 4rem;
-                    @include copy-desktop(400, left, $black);    
-                }
-            }
-        }                                            
-    }
+		.cocina-a-la-reversible__video__container {
+			display: flex;
+			column-gap: 4rem;
+			align-items: center;
 
-    // Baclground image 1
+			.cocina-a-la-reversible__video__img__container {
+				position: relative;
+				margin-left: 8.33%;
+				flex-shrink: 0;
+					
+				.cocina-a-la-reversible__video__device__img {
+					width: 50vw;                   
+					-webkit-filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+					filter: drop-shadow(.7rem .9rem 1rem rgba(0, 0, 0, .5));
+				}  
+				
+				.cocina-a-la-reversible__video__wrapper {
+					position: absolute;
+					top: 2vw;                   
+					right: 2vw;
+					bottom: 2vw;
+					left: 2vw;
+					overflow: hidden;
+					
+					.cocina-a-la-reversible__video {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 99%;
+					}               
+				}
+			}
+	
+			.cocina-a-la-reversible__video__copy__container {
+				margin-right: 8.33%;
+								   
+				.cocina-a-la-reversible__video__copy {
+					padding-top: 4rem;
 
-    .cocina-a-la-reversible__background__img-1__container {
-        position: relative;
-        z-index: -1;
+					@include copy-desktop(400, left, $black);    
+				}
+			}
+		}                                            
+	}
 
-        .cocina-a-la-reversible__background__img-1 {
-            position: absolute;
-            top: -9vw;
-            right: 0;
-            width: 68vw;
-        }        
-    }
+	// Baclground image 1
 
-    // Background logo for desktop
-    
-    .cocina-a-la-reversible__bkg__logo__container__desktop {
-        position: relative;
-        z-index: -100;
+	.cocina-a-la-reversible__background__img-1__container {
+		position: relative;
+		z-index: -1;
 
-        .cocinna-a-la-reversible__bkg__logo__img__desktop {
-            position: absolute;
-            opacity: .08;
-            top: 17vw;
-            left: -20vw;
-            width: 46vw;
-        }
-    }
+		.cocina-a-la-reversible__background__img-1 {
+			position: absolute;
+			top: -9vw;
+			right: 0;
+			width: 68vw;
+		}        
+	}
 
-    // Recipe book
+	// Background logo for desktop
+	
+	.cocina-a-la-reversible__bkg__logo__container__desktop {
+		position: relative;
+		z-index: -100;
 
-    .cocina-a-la-reversible__recipe-book__section {
-        
-        .cocina-a-la-reversible__recipe-book__container {
-            display: flex;
-            justify-content: space-between;
-            padding: 30vw 8.33% 0 8.33%;
-            width: 100vw;
+		.cocinna-a-la-reversible__bkg__logo__img__desktop {
+			position: absolute;
+			opacity: .08;
+			top: 17vw;
+			left: -20vw;
+			width: 46vw;
+		}
+	}
 
-            .cocina-a-la-reversible__recipe-book__cover {
+	// Recipe book
 
-                .cocina-a-la-reversible__recipe-book__cover__img {
-                    width: 95%; 
-                    box-shadow: $our-work-shadows;                 
-                }
-            }
+	.cocina-a-la-reversible__recipe-book__section {
+		
+		.cocina-a-la-reversible__recipe-book__container {
+			display: flex;
+			justify-content: space-between;
+			padding: 30vw 8.33% 0 8.33%;
+			width: 100vw;
 
-            .cocina-a-la-reversible__recipe-book__recipe {
+			.cocina-a-la-reversible__recipe-book__cover {
 
-                .cocina-a-la-reversible__recipe-book__recipe__recipe__img {
-                    width: 95%;
-                    float: right;
-                    box-shadow: $our-work-shadows;
-                }
-            }
-        }
+				.cocina-a-la-reversible__recipe-book__cover__img {
+					width: 95%; 
+					box-shadow: $our-work-shadows;                 
+				}
+			}
 
-        .cocina-a-la-reversible__recipe-book__copy__container {
-            width: 40vw;
-            margin: 4vw 0 0 8.33%;
-            
-            .cocina-a-la-reversible__recipe-book__copy {
-                @include copy-desktop(400, left, $black);
-            }
-        }        
-    }
+			.cocina-a-la-reversible__recipe-book__recipe {
 
-    // Brochure
+				.cocina-a-la-reversible__recipe-book__recipe__recipe__img {
+					width: 95%;
+					float: right;
+					box-shadow: $our-work-shadows;
+				}
+			}
+		}
 
-    .cocina-a-la-reversible__brochure__section {
-        height: 50vw;
+		.cocina-a-la-reversible__recipe-book__copy__container {
+			width: 40vw;
+			margin: 4vw 0 0 8.33%;
+			
+			.cocina-a-la-reversible__recipe-book__copy {
 
-        .cocina-a-la-reversible__brochure__container {
-            position: relative;
-            margin: 0 8.33%;
+				@include copy-desktop(400, left, $black);
+			}
+		}        
+	}
 
-            .cocina-a-la-reversible__brochure___front__img__container {
-                position: absolute;
-                top: 0;
-                right: 0;
-                
-                .cocina-a-la-reversible__brochure__front__img {
-                    width: 33vw;
-                    box-shadow: $our-work-shadows;
-                }
-            }
+	// Brochure
 
-            .cocina-a-la-reversible__brochure__back__img__container {
-                position: absolute;
-                top: 13vw;
-                right: 25vw;
+	.cocina-a-la-reversible__brochure__section {
+		height: 50vw;
 
-                .cocina-a-la-reversible__brochure__back__img {
-                    width: 33vw;
-                    box-shadow: $our-work-shadows;
-                }
-            }
-        }        
-    }
+		.cocina-a-la-reversible__brochure__container {
+			position: relative;
+			margin: 0 8.33%;
 
-    // Background image 2
-    
-    .cocina-a-la-reversible__background__img-2__container {
-        position: relative;
-        z-index: -10;
+			.cocina-a-la-reversible__brochure___front__img__container {
+				position: absolute;
+				top: 0;
+				right: 0;
+				
+				.cocina-a-la-reversible__brochure__front__img {
+					width: 33vw;
+					box-shadow: $our-work-shadows;
+				}
+			}
 
-        .cocina-a-la-reversible__background__img-2 {
-            position: absolute;
-            top: -45vw;
-            width: 45vw;
-        }        
-    }
+			.cocina-a-la-reversible__brochure__back__img__container {
+				position: absolute;
+				top: 13vw;
+				right: 25vw;
+
+				.cocina-a-la-reversible__brochure__back__img {
+					width: 33vw;
+					box-shadow: $our-work-shadows;
+				}
+			}
+		}        
+	}
+
+	// Background image 2
+	
+	.cocina-a-la-reversible__background__img-2__container {
+		position: relative;
+		z-index: -10;
+
+		.cocina-a-la-reversible__background__img-2 {
+			position: absolute;
+			top: -45vw;
+			width: 45vw;
+		}        
+	}
 }    
-    
+	
 // -------------
 // Media Queries
 // -------------
 
 @include media-down(large) {
 
-    cocina-a-la-reversible {
-    
-        //  Project header
-    
-        .cocina-a-la-reversible__header__section {
+	cocina-a-la-reversible {
+	
+		//  Project header
+	
+		.cocina-a-la-reversible__header__section {
    
-            .cocina-a-la-reversible__header__container {
+			.cocina-a-la-reversible__header__container {
 
-                .cocina-a-la-reversible__header__image {
-                    height: 20rem;
-                }
-                
-                .cocina-a-la-reversible__heder {
-                    @include header-lg(left, $white);
-                    width: 36vw;
-                }
-            }    
-        }
-    
-        .cocina-a-la-reversible__copy__container {           
-            height: 35vw;
+				.cocina-a-la-reversible__header__image {
+					height: 20rem;
+				}
+				
+				.cocina-a-la-reversible__heder {
 
-            .cocina-a-la-reversible__copy {
-                @include copy(400, left, $black);
-                width: 36vw;
-            }            
-        }
-    
-        .cocina-a-la-reversible__key-visual__container {               
-            top: 7rem;
+					@include header-lg(left, $white);
+					width: 36vw;
+				}
+			}    
+		}
+	
+		.cocina-a-la-reversible__copy__container {           
+			height: 35vw;
 
-            .cocina-a-la-reversible__key-visual {
-                width: 43vw;
-            }                        
-        }
-    
-        // Photography
-    
-        // Background logo for mobile 
-    
-        // Wood Background
-                
-        // Video
-    
-        .cocina-a-la-reversible__video__section {
-                
-            .cocina-a-la-reversible__video__container {
-                column-gap: 3rem;  
+			.cocina-a-la-reversible__copy {
 
-                .cocina-a-la-reversible__video__copy__container {
-                    
-                    .cocina-a-la-reversible__video__copy {
-                        @include copy(400, left, $black);
-                        padding-top: 0;
-                    }
-                }
-            }             
-        }
-    
-        // Baclground image 1
-    
-        // Background logo for desktop        
-        
-        // Recipe book
+				@include copy(400, left, $black);
+				width: 36vw;
+			}            
+		}
+	
+		.cocina-a-la-reversible__key-visual__container {               
+			top: 7rem;
 
-        .cocina-a-la-reversible__recipe-book__section {
-                        
-            .cocina-a-la-reversible__recipe-book__copy__container {
-                 
-                .cocina-a-la-reversible__recipe-book__copy {
-                    @include copy(400, left, $black);
-                }
-            }        
-        }
-    
-        // Brochure
-    
-        // Background image 2                
-    }      
+			.cocina-a-la-reversible__key-visual {
+				width: 43vw;
+			}                        
+		}
+	
+		// Photography
+	
+		// Background logo for mobile 
+	
+		// Wood Background
+				
+		// Video
+	
+		.cocina-a-la-reversible__video__section {
+				
+			.cocina-a-la-reversible__video__container {
+				column-gap: 3rem;  
+
+				.cocina-a-la-reversible__video__copy__container {
+					
+					.cocina-a-la-reversible__video__copy {
+
+						@include copy(400, left, $black);
+						padding-top: 0;
+					}
+				}
+			}             
+		}
+	
+		// Baclground image 1
+	
+		// Background logo for desktop        
+		
+		// Recipe book
+
+		.cocina-a-la-reversible__recipe-book__section {
+						
+			.cocina-a-la-reversible__recipe-book__copy__container {
+				 
+				.cocina-a-la-reversible__recipe-book__copy {
+
+					@include copy(400, left, $black);
+				}
+			}        
+		}
+	
+		// Brochure
+	
+		// Background image 2                
+	}      
 }
 
 @include media-down(medium) {
 
-    .cocina-a-la-reversible {
-    
-        //  Project header
-    
-        .cocina-a-la-reversible__header__section {
-    
-            .cocina-a-la-reversible__header__container {
+	.cocina-a-la-reversible {
+	
+		//  Project header
+	
+		.cocina-a-la-reversible__header__section {
+	
+			.cocina-a-la-reversible__header__container {
 
-                .cocina-a-la-reversible__header__image {
-                    height: 27rem;   
-                }
-                
-                .cocina-a-la-reversible__heder {
-                    @include header-lg(center, $white);
-                    top: 7.5rem;
-                    bottom: auto;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100%;
-                    padding: 0 8.33%;
-                }
-            }            
-        }
-    
-        .cocina-a-la-reversible__copy__container {    
-            height: 25rem;
-            padding: 18rem 0 0 0;
-            margin: 0 8.33%;
-            
-            .cocina-a-la-reversible__copy {
-                @include copy(400, center, $black);
-                width: auto;
-                max-width: none;
-            }
-        }
-    
-        .cocina-a-la-reversible__key-visual__container {    
-            top: 15rem;
-            right: 50%;
-            transform: translateX(50%);
+				.cocina-a-la-reversible__header__image {
+					height: 27rem;   
+				}
+				
+				.cocina-a-la-reversible__heder {
 
-            .cocina-a-la-reversible__key-visual {
-                width: 23rem;
-            }            
-        }
-    
-        // Photography
-    
-        .cocina-a-la-reversible {
-        
-            .cocina-a-la-reversible__container {
-                flex-direction: column;
-                row-gap: 7vw;
+					@include header-lg(center, $white);
+					top: 7.5rem;
+					bottom: auto;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					padding: 0 8.33%;
+				}
+			}            
+		}
+	
+		.cocina-a-la-reversible__copy__container {    
+			height: 25rem;
+			padding: 18rem 0 0 0;
+			margin: 0 8.33%;
+			
+			.cocina-a-la-reversible__copy {
 
-                .cocina-a-la-reversible__image__container {
-                    margin: 0 8.33%;
+				@include copy(400, center, $black);
+				width: auto;
+				max-width: none;
+			}
+		}
+	
+		.cocina-a-la-reversible__key-visual__container {    
+			top: 15rem;
+			right: 50%;
+			transform: translateX(50%);
 
-                    .cocina-a-la-reversible__image {
-                        width: 100%;                   
-    
-                    }
-                }
-            }            
-        }
-    
-        // Background logo for mobile             
-    
-        // Wood Background
-    
-        .cocina-a-la-reversible__background__wood__container {          
-                    
-            .cocina-a-la-reversible__background__wood__img {
-                top: 30vw;
-                width: 65vw;
-                height: 135vw;
-            }            
-        }
-    
-        // Video
-    
-        .cocina-a-la-reversible__video__section {            
-            padding-top: 2rem;
+			.cocina-a-la-reversible__key-visual {
+				width: 23rem;
+			}            
+		}
+	
+		// Photography
+	
+		.cocina-a-la-reversible {
+		
+			.cocina-a-la-reversible__container {
+				flex-direction: column;
+				row-gap: 7vw;
 
-            .cocina-a-la-reversible__video__container {
-                flex-direction: column;
-                align-items: center;
+				.cocina-a-la-reversible__image__container {
+					margin: 0 8.33%;
 
-                .cocina-a-la-reversible__video__img__container {
-                    order: 2;
-                    margin: 0;
+					.cocina-a-la-reversible__image {
+						width: 100%;                   
+	
+					}
+				}
+			}            
+		}
+	
+		// Background logo for mobile             
+	
+		// Wood Background
+	
+		.cocina-a-la-reversible__background__wood__container {          
+					
+			.cocina-a-la-reversible__background__wood__img {
+				top: 30vw;
+				width: 65vw;
+				height: 135vw;
+			}            
+		}
+	
+		// Video
+	
+		.cocina-a-la-reversible__video__section {            
+			padding-top: 2rem;
 
-                    .cocina-a-la-reversible__video__device__img {
-                        width: 85vw;
-                    }                   
-                }
+			.cocina-a-la-reversible__video__container {
+				flex-direction: column;
+				align-items: center;
 
-                .cocina-a-la-reversible__video__copy__container {
-                    margin: 0 8.33% 1.4rem 8.33%;
+				.cocina-a-la-reversible__video__img__container {
+					order: 2;
+					margin: 0;
 
-                    .cocina-a-la-reversible__video__copy {
-                        padding-top: 1rem;
-                        @include copy(400, center, $black);
-        
-                    }
-                }
-            }                                                   
-        }
-    
-        // Baclground image 1
-    
-        .cocina-a-la-reversible__background__img-1__container {
-               
-            .cocina-a-la-reversible__background__img-1 {
-                right: -42vw;
-                width: 101vw;
-            }            
-        }
-    
-        // Background logo for desktop
-        
+					.cocina-a-la-reversible__video__device__img {
+						width: 85vw;
+					}                   
+				}
 
-    
-        // Recipe book
-    
-        .cocina-a-la-reversible__recipe-book__section {
-                               
-            .cocina-a-la-reversible__recipe-book__container {
-                flex-direction: column;
-                padding-top: 5vw;
+				.cocina-a-la-reversible__video__copy__container {
+					margin: 0 8.33% 1.4rem 8.33%;
 
-                .cocina-a-la-reversible__recipe-book__cover {
+					.cocina-a-la-reversible__video__copy {
+						padding-top: 1rem;
 
-                    .cocina-a-la-reversible__recipe-book__cover__img {
-                        position: relative;
-                        width: 50%;
-                        transform: translate(5vw, 9vw);
-                    }
-                }
-    
-                .cocina-a-la-reversible__recipe-book__recipe {
-    
-                    .cocina-a-la-reversible__recipe-book__recipe__recipe__img {                       
-                        float: none;
-                        width: 100%;
-                    }
-                }
-            }
+						@include copy(400, center, $black);
+		
+					}
+				}
+			}                                                   
+		}
+	
+		// Baclground image 1
+	
+		.cocina-a-la-reversible__background__img-1__container {
+			   
+			.cocina-a-la-reversible__background__img-1 {
+				right: -42vw;
+				width: 101vw;
+			}            
+		}
+	
+		// Background logo for desktop
+		
 
-            .cocina-a-la-reversible__recipe-book__copy__container {
-                width: auto;
-                margin: 8vw 8.33% 0 8.33%;
-                
-                .cocina-a-la-reversible__recipe-book__copy {
-                    @include copy(400, center, $black);
-                }
-            }            
-        }
-    
-        // Brochure
-    
-        .cocina-a-la-reversible__brochure__section {               
-            padding-top: 30vw;
-            height: 135vw;
+	
+		// Recipe book
+	
+		.cocina-a-la-reversible__recipe-book__section {
+							   
+			.cocina-a-la-reversible__recipe-book__container {
+				flex-direction: column;
+				padding-top: 5vw;
 
-            .cocina-a-la-reversible__brochure__container {
-                
-                .cocina-a-la-reversible__brochure___front__img__container {
-                                    
-                    .cocina-a-la-reversible__brochure__front__img {  
-                        position: relative;             
-                        width: 67vw;
-                        z-index: 1;
-                    }
-                }
-    
-                .cocina-a-la-reversible__brochure__back__img__container {
-                    right: inherit;
-                    top: 35vw;
-    
-                    .cocina-a-la-reversible__brochure__back__img {
-                        width: 67vw;
-                    }
-                }
-            }                    
-        }
-    
-        // Background image 2
-        
-        .cocina-a-la-reversible__background__img-2__container {
-    
-            .cocina-a-la-reversible__background__img-2 {
-                top: -127vw;
-                width: 72vw;
-            }            
-        }
-    }   
+				.cocina-a-la-reversible__recipe-book__cover {
+
+					.cocina-a-la-reversible__recipe-book__cover__img {
+						position: relative;
+						width: 50%;
+						transform: translate(5vw, 9vw);
+					}
+				}
+	
+				.cocina-a-la-reversible__recipe-book__recipe {
+	
+					.cocina-a-la-reversible__recipe-book__recipe__recipe__img {                       
+						float: none;
+						width: 100%;
+					}
+				}
+			}
+
+			.cocina-a-la-reversible__recipe-book__copy__container {
+				width: auto;
+				margin: 8vw 8.33% 0 8.33%;
+				
+				.cocina-a-la-reversible__recipe-book__copy {
+					
+					@include copy(400, center, $black);
+				}
+			}            
+		}
+	
+		// Brochure
+	
+		.cocina-a-la-reversible__brochure__section {               
+			padding-top: 30vw;
+			height: 135vw;
+
+			.cocina-a-la-reversible__brochure__container {
+				
+				.cocina-a-la-reversible__brochure___front__img__container {
+									
+					.cocina-a-la-reversible__brochure__front__img {  
+						position: relative;             
+						width: 67vw;
+						z-index: 1;
+					}
+				}
+	
+				.cocina-a-la-reversible__brochure__back__img__container {
+					right: inherit;
+					top: 35vw;
+	
+					.cocina-a-la-reversible__brochure__back__img {
+						width: 67vw;
+					}
+				}
+			}                    
+		}
+	
+		// Background image 2
+		
+		.cocina-a-la-reversible__background__img-2__container {
+	
+			.cocina-a-la-reversible__background__img-2 {
+				top: -127vw;
+				width: 72vw;
+			}            
+		}
+	}   
 }
 
 @include media-down(small) {
 
-    .cocina-a-la-reversible {
-        overflow: hidden;
-    
-        //  Project header        
-    
-        // Video
+	.cocina-a-la-reversible {
+		overflow: hidden;
+	
+		//  Project header        
+	
+		// Video
   
-        // Baclground image 1           
-    
-        // Background logo for desktop                
-    
-        // Recipe book            
-    
-        // Brochure        
-    
-        // Background image 2                
-    }  
+		// Baclground image 1           
+	
+		// Background logo for desktop                
+	
+		// Recipe book            
+	
+		// Brochure        
+	
+		// Background image 2                
+	}  
 }
 
 @include media-down(extra-small) {
 
-    .cocina-a-la-reversible {
-    
-        //  Project header
-            
-        .cocina-a-la-reversible__copy__container {                           
-            height: 33rem;
-            padding-top: 84vw;            
-        }
-    
-        .cocina-a-la-reversible__key-visual__container {                    
-            top: 20rem;
+	.cocina-a-la-reversible {
+	
+		//  Project header
+			
+		.cocina-a-la-reversible__copy__container {                           
+			height: 33rem;
+			padding-top: 84vw;            
+		}
+	
+		.cocina-a-la-reversible__key-visual__container {                    
+			top: 20rem;
 
-            .cocina-a-la-reversible__key-visual {
-                width: 83vw;
-            }            
-        }
-    
-        // Photography
-    
-        // Background logo for mobile 
-    
-        .cocina-a-la-reversible__bkg__logo__container__mobile {
-               
-            .cocinna-a-la-reversible__bkg__logo__img__mobile {
-                top: -120vw;
-                right: -50vw;
-                width: 120vw;
-            }            
-        }
-    
-        // Wood Background
-    
-        // Video
-            
-        // Baclground image 1
-    
-        // Background logo for desktop
-    
-        // Recipe book
-    
-        // Brochure
-        
-        // Background image 2                
-    } 
+			.cocina-a-la-reversible__key-visual {
+				width: 83vw;
+			}            
+		}
+	
+		// Photography
+	
+		// Background logo for mobile 
+	
+		.cocina-a-la-reversible__bkg__logo__container__mobile {
+			   
+			.cocinna-a-la-reversible__bkg__logo__img__mobile {
+				top: -120vw;
+				right: -50vw;
+				width: 120vw;
+			}            
+		}
+	
+		// Wood Background
+	
+		// Video
+			
+		// Baclground image 1
+	
+		// Background logo for desktop
+	
+		// Recipe book
+	
+		// Brochure
+		
+		// Background image 2                
+	} 
 }
 
 @include media-down(xxs) {
 
-    .cocina-a-la-reversible {
-        overflow: hidden;
-    
-        //  Project header
-    
-        // Video           
-    
-        // Baclground image 1
-    
-        // Background logo for desktop
-    
-        // Recipe book
-    
-        // Brochure
-    
-        // Background image 2                
-    }  
+	.cocina-a-la-reversible {
+		overflow: hidden;
+	
+		//  Project header
+	
+		// Video           
+	
+		// Baclground image 1
+	
+		// Background logo for desktop
+	
+		// Recipe book
+	
+		// Brochure
+	
+		// Background image 2                
+	}  
 }
-    
+	
 
 

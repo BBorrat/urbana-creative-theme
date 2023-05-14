@@ -40,7 +40,7 @@
 
             <div class="header__container__margin">
 
-                <a href="/" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
+                <a href="https://urbanacreative.com" class="header__logo-link"><img src="<?php bloginfo('template_directory')?>/assets/images/small-logo.svg" alt="Logo Urbana Creative" class="header__logo" id="header__logo"></a>
                     
                 <div class="header__hamburger__menu" id="header-hamburger-menu">
                     <div class="bar1"></div>
@@ -51,7 +51,7 @@
                 <nav class="header__navbar" id="header__navbar">
                     <ul class="header__menu" id="header-menu-container" >
                         <!-- For active link add link--active class to li tags-->
-                        <li class="header__menu__items"> <a href="/" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
+                        <li class="header__menu__items"> <a href="https://urbanacreative.com" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
                         <li class="header__menu__items"> <a href="about-us" id="header-menu-item-link" class="header__menu__item__link">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" id="header-menu-item-link" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" id="header-menu-item-link" class="header__menu__item__link">Featured Projects</a></li>
@@ -82,7 +82,7 @@
 
                     <h4 class="join-us__form__cta">We are always seeking new inspiration and talent to fuel our creative team.<br>We sincerely appreciate your interest to join us! </h4>
                     
-                    <form class="join-us__form" id="join-us-form" >
+                    <form class="join-us__form">
                         <label for="talents">*Choose your talent</label>
                         <select name="talents" id="talents" required>
                             <option value="2d-3d-animator">2D-3D Animator 1</option>
@@ -157,12 +157,6 @@
     <script>
     const responsiveHeader = document.getElementById("header");
     const headerHamburgerMenu = document.getElementById("header-hamburger-menu");
-    const joinUsForm = document.getElementById("join-us-form");
-    const joinUsInputName = document.getElementById("name");
-    const joinUsInputLastName = document.getElementById("last-name");
-    const joinUsInputEmail = document.getElementById("email");
-    const joinUsInputLastLinkedin = document.getElementById("linkedin");
-    const joinUsInputLastOnLinePortfolio = document.getElementById("online-portfolio");
 
     headerHamburgerMenu.addEventListener("click", function() {
         headerHamburgerMenu.classList.toggle("change");
@@ -175,25 +169,6 @@
                 responsiveHeader.classList.add("header__desktop__scroll");
             };          
     });
-
-    // Join us form
-    joinUsForm.addEventListener("submit", function(event) {
-            console.log('entrando al log')
-            console.log(joinUsInputName.value);
-            event.preventDefault();
-
-            const params= "?name=" + joinUsInputName.value + "&last-name=" + joinUsInputLastName.value + "&email=" + joinUsInputEmail.value + "&linkedin=" + joinUsInputLastLinkedin.value + "&online-portfolio=" + joinUsInputLastOnLinePortfolio.value;
-            console.log(params);
-
-            
-            joinUsInputName.value = "";
-            joinUsInputLastName.value = "";
-            joinUsInputEmail.value = "";
-            joinUsInputLastLinkedin.value = "";
-            joinUsInputLastOnLinePortfolio.value = "";
-            
-
-        }, true );
     </script>
 
 <?php

@@ -1,84 +1,88 @@
 .brands-banner {
-    width: 100%;
-    height: 100vh;
-    max-height: 710px;
-    background: linear-gradient($kale 10%, $black 80%);
-    overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	max-height: 710px;
+	background: linear-gradient($kale 10%, $black 80%);
+	overflow: hidden;
 
-    .brands--banner--text--container {
-        position: relative;
-        z-index: 10;
-        padding: 2.5rem 8.33%;
-        max-width: 60rem;
-        margin: auto;
+	.brands--banner--text--container {
+		position: relative;
+		z-index: 10;
+		padding: 2.5rem 8.33%;
+		max-width: 60rem;
+		margin: auto;
 
-        .brands--banner--header {
-            @include header-lg(center, $carrot);
-        }
+		.brands--banner--header {
+			
+			@include header-lg(center, $carrot);
+		}
 
-        .brands--banner-paragraph {
-            @include copy-desktop(600, center, $white);
-        }
-    }
+		.brands--banner-paragraph {
+			
+			@include copy-desktop(600, center, $white);
+		}
+	}
    
-    .brands-background {
-        width: 117%;
-        height: 100%;
-        transform: translateX(-8%);   
-     
-        .brands__img {
-            position: relative;
-            width: 100%;
-            top: -19rem;
-            left: 50%;
-            min-height: 760px;
-            transform: translateX(-50%);
-            opacity: .5;
-            z-index: 1;  
-            -webkit-mask-image: linear-gradient(to bottom, transparent 3%, $black 60%); 
-            mask-image: linear-gradient(to bottom, transparent 3%, $black 60%);
-        }               
-    }        
+	.brands-background {
+		width: 117%;
+		height: 100%;
+		transform: translateX(-8%);   
+	 
+		.brands__img {
+			position: relative;
+			width: 100%;
+			top: -19rem;
+			left: 50%;
+			min-height: 760px;
+			transform: translateX(-50%);
+			opacity: .5;
+			z-index: 1;  
+			-webkit-mask-image: linear-gradient(to bottom, transparent 3%, $black 60%); 
+			mask-image: linear-gradient(to bottom, transparent 3%, $black 60%);
+		}               
+	}        
 }   
 
 // Media Queries
 
 @include media-down(large) {
 
-    .brands-banner {
-    
-        .brands--banner--text--container {
+	.brands-banner {
+	
+		.brands--banner--text--container {
    
-             .brands--banner--header {
-                 @include header-lg(center, $carrot);
-             }
-    
-             .brands--banner-paragraph {
-                 @include copy(600, center, $white);
-             }
-        }
-       
-        .brands-background { 
-         
-            .brands__img {
-            
-                width: 160%;
-                opacity: .4;
-            }               
-        }        
-    } 
+			 .brands--banner--header {
+
+				 @include header-lg(center, $carrot);
+			 }
+	
+			 .brands--banner-paragraph {
+
+				 @include copy(600, center, $white);
+			 }
+		}
+	   
+		.brands-background { 
+		 
+			.brands__img {
+			
+				width: 160%;
+				opacity: .4;
+			}               
+		}        
+	} 
 }
 
 @include media-down(small) {
 
-    .brands-banner {        
-       
-        .brands-background { 
-         
-            .brands__img {               
-                width: 250%;                
-            }               
-        }        
-    }  
+	.brands-banner {        
+	   
+		.brands-background { 
+		 
+			.brands__img {               
+				width: 250%;                
+			}               
+		}        
+	}  
 }
 

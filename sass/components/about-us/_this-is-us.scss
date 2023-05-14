@@ -1,36 +1,39 @@
 .this-is-us__section {
-    background: url(assets/images/this-is-us-bkg-img-desktop.jpg) no-repeat 60% / 50%;
-    background-size: cover;
-    padding: 6.5rem 8.33% 1.5rem;
-    min-width: 280px;
+	background: url(assets/images/this-is-us-bkg-img-desktop.jpg) no-repeat 60% / 50%;
+	background-size: cover;
+	padding: 6.5rem 8.33% 1.5rem;
+	min-width: 280px;
 
-    .this-is-us__container {
-       
-        .this-is-us__header {
-            @include header-lg(center, $carrot);
-        }
+	.this-is-us__container {
+	   
+		.this-is-us__header {
+			
+			@include header-lg(center, $carrot);
+		}
 
-        .this-is-us__copy__container {
-            @include copy-desktop(700, center, $white);
-            max-width: 60rem;
-            margin-left: auto;
-            margin-right: auto;  
-        }
-    }
+		.this-is-us__copy__container {
+			
+			@include copy-desktop(700, center, $white);
+			max-width: 60rem;
+			margin-left: auto;
+			margin-right: auto;  
+		}
+	}
 }
 
 // Media Queries
 
 @include media-down(large) {
 
-    .this-is-us__section {
-    
-        .this-is-us__container {
-    
-            .this-is-us__copy__container {
-                @include copy(700, center, $white);
+	.this-is-us__section {
+	
+		.this-is-us__container {
+	
+			.this-is-us__copy__container {
+				
+				@include copy(700, center, $white);
 
-            }
-        }
-    }
+			}
+		}
+	}
 }

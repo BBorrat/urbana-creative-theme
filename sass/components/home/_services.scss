@@ -1,348 +1,349 @@
 .services__canvas {
-    position: relative;
-    width: 100%;
-    z-index: 100;
-    background-color: $light-gray;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	background-color: $light-gray;
 
-    .service--grid--container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "item-01  item-02  item-03  item-03"
-        "item-05  item-06  item-07  item-08"
-        "item-09  item-10  item-11  item-12";
+	.service--grid--container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"item-01  item-02  item-03  item-03"
+		"item-05  item-06  item-07  item-08"
+		"item-09  item-10  item-11  item-12";
 
-        .service__first-img {
-            background-image: url(assets/images/services-xpert.jpg);
-            background-size: cover;
-            grid-area: item-01;
-            // @include hover-flash-fx;
-        }
-        
-        .video {
-            grid-area: item-02;
-        }
-        
-        .service__second-img {
-            background-image: url(assets/images/services-icecream-maker.jpg);
-            background-size: cover;
-            background-position: 100% 10%;
-            background-repeat: no-repeat;
-            grid-area: item-03;
-            // @include hover-flash-fx;            
-        }
-        
-        .photography {
-            grid-area: item-05;
-        }
-                
-        .social {
-            grid-area: item-07;
-        }
-                
-        .service__third-img {
-            background-image: url(assets/images/services-meatballs.jpg);
-            background-size: cover;
-            grid-area: item-06;
-            // @include hover-flash-fx;
-        }
-        
-        .creative {
-            grid-area: item-10;
-        }
-        
-        .service__fourth-img {
-            background-image: url(assets/images/services-actifit.jpg);
-            background-size: cover;
-            grid-area: item-08;
-            // @include hover-flash-fx;
-        }
-        
-        .service__fifth-img {
-            background-image: url(assets/images/services-sunbeam.jpg);
-            background-size: cover;
-            grid-area: item-09;
-            // @include hover-flash-fx;
-        }
-        
-        .post {
-            grid-area: item-12;
-        }
-                
-        .service__sixth-img {
-            background-image: url(assets/images/services-coffee.jpg);
-            background-size: cover;
-            grid-area: item-11;
-            // @include hover-flash-fx;
-        }
-        
-        .join {
-            grid-area: item-12;
-        }
-        
-        &::before {
-            content: '';
-            width: 0;
-            padding-bottom: 100%;
-            grid-row: 1 / 1;
-            grid-column: 1 / 1;
-        }
+		.service__first-img {
+			background-image: url(assets/images/services-xpert.jpg);
+			background-size: cover;
+			grid-area: item-01;
+			// @include hover-flash-fx;
+		}
+		
+		.video {
+			grid-area: item-02;
+		}
+		
+		.service__second-img {
+			background-image: url(assets/images/services-icecream-maker.jpg);
+			background-size: cover;
+			background-position: 100% 10%;
+			background-repeat: no-repeat;
+			grid-area: item-03;
+			// @include hover-flash-fx;            
+		}
+		
+		.photography {
+			grid-area: item-05;
+		}
+				
+		.social {
+			grid-area: item-07;
+		}
+				
+		.service__third-img {
+			background-image: url(assets/images/services-meatballs.jpg);
+			background-size: cover;
+			grid-area: item-06;
+			// @include hover-flash-fx;
+		}
+		
+		.creative {
+			grid-area: item-10;
+		}
+		
+		.service__fourth-img {
+			background-image: url(assets/images/services-actifit.jpg);
+			background-size: cover;
+			grid-area: item-08;
+			// @include hover-flash-fx;
+		}
+		
+		.service__fifth-img {
+			background-image: url(assets/images/services-sunbeam.jpg);
+			background-size: cover;
+			grid-area: item-09;
+			// @include hover-flash-fx;
+		}
+		
+		.post {
+			grid-area: item-12;
+		}
+				
+		.service__sixth-img {
+			background-image: url(assets/images/services-coffee.jpg);
+			background-size: cover;
+			grid-area: item-11;
+			// @include hover-flash-fx;
+		}
+		
+		.join {
+			grid-area: item-12;
+		}
+		
+		&::before {
+			content: '';
+			width: 0;
+			padding-bottom: 100%;
+			grid-row: 1 / 1;
+			grid-column: 1 / 1;
+		}
 
-        .service--grid--image {
-            position: relative;
-            z-index: 100;
+		.service--grid--image {
+			position: relative;
+			z-index: 100;
 
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: rgba($color: $black, $alpha: .3);
-                mix-blend-mode: multiply;
-            }
-        }
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba($color: $black, $alpha: .3);
+				mix-blend-mode: multiply;
+			}
+		}
 
-        .service--grid--link {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            text-decoration: none;
-            z-index: 100;
-            
-            &:hover {
-                background-color: rgba($color: $black, $alpha: .1);
-            }
+		.service--grid--link {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			text-decoration: none;
+			z-index: 100;
+			
+			&:hover {
+				background-color: rgba($color: $black, $alpha: .1);
+			}
 
-            .service__grid__container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-decoration: none;
-                color: #164854;
+			.service__grid__container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-decoration: none;
+				color: #164854;
 
-                .service__grid__video__icon {
-                    width: 8.4rem;
-                    margin-bottom: 1.4rem;
-                    cursor: pointer;
-                    transition: all .3s ease;
+				.service__grid__video__icon {
+					width: 8.4rem;
+					margin-bottom: 1.4rem;
+					cursor: pointer;
+					transition: all .3s ease;
 
-                    &:hover {
-                        transform: scale(1.2);    
-                    }
-                }
+					&:hover {
+						transform: scale(1.2);    
+					}
+				}
 
-                .service__grid__photography__icon {
-                    width: 8.6rem;
-                    margin-bottom: 1rem;
-                    cursor: pointer;
-                    transition: all .3s ease;
-                    
-                    &:hover {
-                        transform: scale(1.2);    
-                    }
-                }
+				.service__grid__photography__icon {
+					width: 8.6rem;
+					margin-bottom: 1rem;
+					cursor: pointer;
+					transition: all .3s ease;
+					
+					&:hover {
+						transform: scale(1.2);    
+					}
+				}
 
-                .service__grid__social__icon {
-                    width: 8.3rem;
-                    margin-bottom: 1rem;
-                    cursor: pointer;
-                    transition: all .3s ease;
-                    
-                    &:hover {
-                        transform: scale(1.2);    
-                    }
-                }
+				.service__grid__social__icon {
+					width: 8.3rem;
+					margin-bottom: 1rem;
+					cursor: pointer;
+					transition: all .3s ease;
+					
+					&:hover {
+						transform: scale(1.2);    
+					}
+				}
 
-                .service__grid__creative__icon {
-                    width: 8.3rem;
-                    margin-bottom: 1.2rem;
-                    cursor: pointer;
-                    transition: all .3s ease;
-                    
-                    &:hover {
-                        transform: scale(1.2); 
-                    }
-                }
+				.service__grid__creative__icon {
+					width: 8.3rem;
+					margin-bottom: 1.2rem;
+					cursor: pointer;
+					transition: all .3s ease;
+					
+					&:hover {
+						transform: scale(1.2); 
+					}
+				}
 
-                .service__grid__postproduction__icon {
-                    width: 8.7rem;
-                    margin-bottom: 1.2rem;
-                    cursor: pointer;
-                    transition: all .3s ease;
-                    
-                    &:hover {
-                        transform: scale(1.2);    
-                    }
-                }
+				.service__grid__postproduction__icon {
+					width: 8.7rem;
+					margin-bottom: 1.2rem;
+					cursor: pointer;
+					transition: all .3s ease;
+					
+					&:hover {
+						transform: scale(1.2);    
+					}
+				}
 
-                .service__grid__Urbana__isotype {
-                    width: 8.5rem;
-                    margin-bottom: 1.4rem;
-                }
+				.service__grid__Urbana__isotype {
+					width: 8.5rem;
+					margin-bottom: 1.4rem;
+				}
 
-                .service__name {
-                    @include header-xsm(center, $kale);
-                }
+				.service__name {
+					
+					@include header-xsm(center, $kale);
+				}
 
-               
-            }
-                    
-            .service__grid__inner-frame {
-                position: absolute;
-                width: 87%;
-                height: 87%;
-                border: 2px solid $white;
-                z-index: -1;                
-            }          
-        }
-    }
+			   
+			}
+					
+			.service__grid__inner-frame {
+				position: absolute;
+				width: 87%;
+				height: 87%;
+				border: 2px solid $white;
+				z-index: -1;                
+			}          
+		}
+	}
 
-    @include media-down(large) {
-        .service--grid--container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-areas: 
-            "item-01  item-02  item-02"
-            "item-04  item-05  item-06"
-            "item-07  item-08  item-09"  
-            "item-10  item-11  item-12";
+	@include media-down(large) {
+		.service--grid--container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+			grid-template-rows: repeat(4, 1fr);
+			grid-template-areas: 
+			"item-01  item-02  item-02"
+			"item-04  item-05  item-06"
+			"item-07  item-08  item-09"  
+			"item-10  item-11  item-12";
 
-            
-            
-            .video {
-                grid-area: item-01;
-            }
+			
+			
+			.video {
+				grid-area: item-01;
+			}
 
-            .service__first-img {
-                grid-area: item-04;
-            }
+			.service__first-img {
+				grid-area: item-04;
+			}
 
-            .service__second-img {
-                grid-area: item-02;
-            }
+			.service__second-img {
+				grid-area: item-02;
+			}
 
-            .creative {
-                grid-area: item-09;
-            }
+			.creative {
+				grid-area: item-09;
+			}
 
-            .service__fifth-img {
-                grid-area: item-10
-            }
+			.service__fifth-img {
+				grid-area: item-10
+			}
 
-            .post {
-                grid-area: item-11;
-            }
+			.post {
+				grid-area: item-11;
+			}
 
-            .service__sixth-img {
-                grid-area: item-12
-            }
-        }    
-    }
+			.service__sixth-img {
+				grid-area: item-12
+			}
+		}    
+	}
 
-    @include media-down(medium) {
-        .service--grid--container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-            grid-template-rows: repeat(6, 1fr);
-            grid-template-areas: 
-            "item-01  item-02"
-            "item-03  item-04"  
-            "item-05  item-05"
-            "item-07  item-08"  
-            "item-09  item-10"  
-            "item-11  item-12";
+	@include media-down(medium) {
+		.service--grid--container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+			grid-template-rows: repeat(6, 1fr);
+			grid-template-areas: 
+			"item-01  item-02"
+			"item-03  item-04"  
+			"item-05  item-05"
+			"item-07  item-08"  
+			"item-09  item-10"  
+			"item-11  item-12";
 
-            .service__first-img {
-                grid-area: item-01;
-            }
+			.service__first-img {
+				grid-area: item-01;
+			}
 
-            .video {
-                grid-area: item-02;
-            }
+			.video {
+				grid-area: item-02;
+			}
 
-            .service__second-img {
-                grid-area: item-05;
-            }
+			.service__second-img {
+				grid-area: item-05;
+			}
 
-            .service__third-img {
-                grid-area: item-04;
-            }
+			.service__third-img {
+				grid-area: item-04;
+			}
 
-            .photography {
-                grid-area: item-03;
-            }
+			.photography {
+				grid-area: item-03;
+			}
 
-            .service__fourth-img {
-                grid-area: item-07;
-            }
+			.service__fourth-img {
+				grid-area: item-07;
+			}
 
-           .social {
-            grid-area: item-08;
-           }
+		   .social {
+			grid-area: item-08;
+		   }
 
-           .service__sixth-img {
-            grid-area: item-11;
-           }
+		   .service__sixth-img {
+			grid-area: item-11;
+		   }
 
-           .post {
-            grid-area: item-12;
-           }
-        }
-    }        
-    
-    @include media-down(extra-small) {
-        .service--grid--container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-            grid-template-rows: repeat(9, 1fr);
-            grid-template-areas: 
-            "item-01"
-            "item-02"
-            "item-03"
-            "item-04"  
-            "item-05"
-            "item-06"
-            "item-07"
-            "item-08"  
-            "item-09";
+		   .post {
+			grid-area: item-12;
+		   }
+		}
+	}        
+	
+	@include media-down(extra-small) {
+		.service--grid--container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+			grid-template-rows: repeat(9, 1fr);
+			grid-template-areas: 
+			"item-01"
+			"item-02"
+			"item-03"
+			"item-04"  
+			"item-05"
+			"item-06"
+			"item-07"
+			"item-08"  
+			"item-09";
 
-            .video {
-                grid-area: item-01;
-            }
+			.video {
+				grid-area: item-01;
+			}
 
-            .service__first-img {
-                grid-area: item-02;
-            }
+			.service__first-img {
+				grid-area: item-02;
+			}
 
-            .service__second-img {
-                display: none;
-            } 
-            
-            .social {
-                grid-area: item-05;
-            }
+			.service__second-img {
+				display: none;
+			} 
+			
+			.social {
+				grid-area: item-05;
+			}
 
-            .service__fourth-img {
-                grid-area: item-06;
-            }
+			.service__fourth-img {
+				grid-area: item-06;
+			}
 
-            .creative {
-                grid-area: item-07;
-            }
+			.creative {
+				grid-area: item-07;
+			}
 
-            .service__sixth-img {
-                grid-area: item-08;
-            }
+			.service__sixth-img {
+				grid-area: item-08;
+			}
 
-            .post {
-                grid-area: item-09;
-            }
-        }    
-    }
+			.post {
+				grid-area: item-09;
+			}
+		}    
+	}
 }    

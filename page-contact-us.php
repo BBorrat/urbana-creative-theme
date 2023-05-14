@@ -10,8 +10,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Urbana_Creative_Theme
- */   
-
+ */
+   
 ?>
 
 <!doctype html>
@@ -51,7 +51,7 @@
                 <nav class="header__navbar" id="header__navbar">
                     <ul class="header__menu" id="header-menu-container" >
                         <!-- For active link add link--active class to li tags-->
-                        <li class="header__menu__items"> <a href="/" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
+                        <li class="header__menu__items"> <a href="http://zinaphia.com/dev/urbana" id="header-menu-item-link" class="header__menu__item__link">Home</a></li>
                         <li class="header__menu__items"> <a href="about-us" id="header-menu-item-link" class="header__menu__item__link">About Us</a></li>
                         <li class="header__menu__items"> <a href="expertise-video-and-motion-graphics" id="header-menu-item-link" class="header__menu__item__link">Expertise</a></li>
                         <li class="header__menu__items"> <a href="featured-project" id="header-menu-item-link" class="header__menu__item__link">Featured Projects</a></li>
@@ -68,8 +68,8 @@
 
         <!-- Contact us -->       
         <section class="contact--container" id="contact-us">
-           
-        <div class="contact--content--width">
+
+            <div class="contact--content--width">
 
             <div class="contact--header--container">
                             <h3 class="contact--header">Contact Us</h3>
@@ -152,10 +152,10 @@
         // Contact us form
         contactForm.addEventListener("submit", function(event) {
             console.log('entrando al log');
-            console.log(inputName.value);
             event.preventDefault();
-
+            console.log(inputName.value);
             
+
             const params = "?name=" + inputName.value + "&company=" + inputCompany.value + "&email=" + inputEmail.value + "&message=" + inputMessage.value;
             console.log(params);
 
@@ -169,7 +169,7 @@
 
             // body: JSON.stringify(body);
 
-            fetch("https://mangosta-api.herokuapp.com/api/mailsb" + params)
+            fetch("https://apimangosta.galizperu.com/api/mailsb" + params)
             .then( function(resp) {
                 console.log(resp);
             });

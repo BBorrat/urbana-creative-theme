@@ -1,17 +1,18 @@
 .hero {
-    overflow: hidden;
+	overflow: hidden;
 
-    .hero__container {
-        width: 100vw;
-        height: 21rem;
-        background: linear-gradient(to top, $kale 30%, $urbana-green 170%);
+	.hero__container {
+		width: 100vw;
+		height: 21rem;
+		background: linear-gradient(to top, $kale 30%, $urbana-green 170%);
 
-        .hero__header {
-            position: relative;
-            padding-top: 4rem;
-            top: 50%;
-            transform: translateY(-50%);
-            @include header-lg(center, $carrot);
-        }
-    }
+		.hero__header {
+			position: relative;
+			padding-top: 4rem;
+			top: 50%;
+			transform: translateY(-50%);
+			
+			@include header-lg(center, $carrot);
+		}
+	}
 }

@@ -19,7 +19,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title>Urbana Creative Group</title>
+	<title>Urbana Creative Group | Case study</title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory')?>/assets/images/favicon.svg" type="image/svg">
 
 	<?php wp_head(); ?>
@@ -67,52 +67,81 @@
 	<main id="primary" class="site-main">
         
         <!-- Hero -->
+        <section class="case-study__hero" >
+            <h3 class="case-study__hero-heading">THE ART OF <br> <span class="case-study__hero-heading-line-2">JUGGLING</span></h3>
+            <div class="case-study__hero-copy-content">
+                <p class="case-study__hero-copy"><span class="case-study__hero-copy-hightlighted">Getting the most of our client's budget</span> is a key goal that we always strive for. Successful production management depends on <span class="case-study__hero-copy-hightlighted">good planning</span> especially when there are a variety of variables and the main objective is <span class="case-study__hero-copy-hightlighted">maximizing productivity</span>. A good example, is our latest challenging project where we had to produce photo and video content simultaneously for our client Costa Farms within a short timeline and tight budget.</p>
+            </div>
+            <img src="<?php bloginfo('template_directory')?>/assets/images/case-study-hero-heading-image-large.jpg" alt="Behind the scene production image" class="case-study__hero-small-image" >
+            <img src="<?php bloginfo('template_directory')?>/assets/images/case-study-hero-small-image-large.jpg" alt="Girl with plants image" class="case-study__hero-heading-image">
+            <img src="<?php bloginfo('template_directory')?>/assets/images/case-study-background-leaf.svg" alt="Leaf outline illustration" class="case-study__hero-leaf-1">
+            <img src="<?php bloginfo('template_directory')?>/assets/images/case-study-background-leaf.svg" alt="Leaf outline illustration" class="case-study__hero-leaf-2">
+        </section>
 
         <!-- How to -->
+        <section class="case-study__how-to" >
+
+        </section>
 
         <!-- Deliverables -->
+        <section class="case-study__deliverables" >
+
+        </section>
 
         <!-- Carousel -->
+        <section class="case-study__carousel" >
+
+        </section>
 
         <!-- Challenge -->
+        <section class="challenge" >
+
+        </section>
 
         <!-- Images grid -->
+        <section class="case-study__images-grid" >
+
+        </section>
 
         <!-- Collaboration -->
+        <section class="case-study__collaboration" >
+
+        </section>
        
         <!-- Testimonials -->
-        <section class="testimonial">
-            <div class="testimonial__text__container">
-                <h3 class="testimonial__header">CLIENT'S TESTIMONIALS</h3>                
+        <section class="case-study__testimonial">
+            <div class="case-study__testimonial__text__container">
+                <h3 class="case-study__testimonial__header">CLIENT'S TESTIMONIALS</h3>                
             </div>
 
             <div class="arrow__container">
                 <div class="arrow"></div>
             </div>
             
-            <div class="testimonial__container">
-                <div class="testimonial__item">
-                <h1 style="color: red;" >FALTA LOGOTIPO=======</h1>
+            <div class="case-study__testimonial__container">
+                <div class="case-study__testimonial__item">
                     <!-- <img src="<?php bloginfo('template_directory')?>/assets/images/logo-coravin.svg" alt=" logotype" class="testimonial__coravin-logo">-->
-                    <div class="testimonial__quotation__mark">“</div>                   
-                    <div class="testimonial__item__container">
-                        <p class="testimonial__testimonial">Urbana Creative Group impressed me right out of the gate. When we started working with them, we were launching two big projects. They handled both with ease and blended seamlessly with our branding agency to execute a major photo shoot. They've handled sudden changes with ease and throughout everything, have been pleasant to collaborate with. I'm glad we've found them and value our continued partnership</p>
-                        <p class="testionial__name">Justin, Sr. Manager</p>
-                        <p class="testimonial__job-title">Brand Marketing</p>
-                        <p class="testimonial__job-title">Costa Farms - Miami</p>
-                        <div class="testimonial__line"></div>
+                    <div class="case-study__testimonial__quotation__mark">“</div>                   
+                    <div class="case-study__testimonial__item__container">
+                        <h4 class="case-study__testimonial__heading" >Costa Farms</h4>
+                        <p class="case-study__testimonial__testimonial">Urbana Creative Group impressed me right out of the gate. When we started working with them, we were launching two big projects. They handled both with ease and blended seamlessly with our branding agency to execute a major photo shoot. They've handled sudden changes with ease and throughout everything, have been pleasant to collaborate with. I'm glad we've found them and value our continued partnership</p>
+                        <p class="case-study__testionial__name">Justin, Sr. Manager</p>
+                        <p class="case-study__testimonial__job-title">Brand Marketing</p>
+                        <p class="case-study-testimonial__address">Costa Farms - Miami</p>
+                        <div class="case-study__testimonial__line"></div>
                     </div>                   
                 </div>
-                <div class="testimonial__item">
-                    <h1 style="color: red;" >FALTA LOGOTIPO=======</h1>
+                <div class="case-study__testimonial__item">
+                    
                     <!-- <img src="<?php bloginfo('template_directory')?>/assets/images/logo-newell.svg" alt="Newell Brands logotype" class="testimonial__newell-logo"> -->
-                    <div class="testimonial__quotation__mark">“</div>
-                    <div class="testimonial__item__container">
-                        <p class="testimonial__testimonial">When our Agency needed to produce a photo/video shoot for an important client in Miami, we were fortunately connected to Urbana Creative. Since our agency is not from Miami, we needed to partner with an organization that would not only be our preproduction producers but would collaborate to deliver a better-than-expected product to our client - from pre-to post-production. Urbana Creative was that partner. The preproduction was seamless with finding the perfect locations and providing a responsive styling and production team. When at the locations, logistics were flawless, and since the shoot list was extensive, staying on top and anticipating our needs was critical. Not to mention the amazing catering for the team! Urbana did that. After the shoot, the deliverable was laced out and sent so we could continue our work and meet our deadline.</p>
-                        <p class="testionial__name">Brent Marmo</p>
-                        <p class="testimonial__job-title">Co-Founder Agency Squid</p>
-                        <p class="testimonial__job-title">Minneapolis</p>
-                        <div class="testimonial__line"></div>
+                    <div class="case-study__testimonial__quotation__mark">“</div>
+                    <div class="case-study__testimonial__item__container">
+                    <h4 class="case-study__testimonial__heading" >Agency Squid</h4>
+                        <p class="case-study__testimonial__testimonial">When our Agency needed to produce a photo/video shoot for an important client in Miami, we were fortunately connected to Urbana Creative. Since our agency is not from Miami, we needed to partner with an organization that would not only be our preproduction producers but would collaborate to deliver a better-than-expected product to our client - from pre-to post-production. Urbana Creative was that partner. The preproduction was seamless with finding the perfect locations and providing a responsive styling and production team. When at the locations, logistics were flawless, and since the shoot list was extensive, staying on top and anticipating our needs was critical. Not to mention the amazing catering for the team! Urbana did that. After the shoot, the deliverable was laced out and sent so we could continue our work and meet our deadline.</p>
+                        <p class="case-study__testionial__name">Brent Marmo</p>
+                        <p class="case-study__testimonial__job-title">Co-Founder Agency Squid</p>
+                        <p class="case-study__testimonial__address">Minneapolis</p>
+                        <div class="case-study__testimonial__line"></div>
                     </div>
                 </div>                
             </div>
